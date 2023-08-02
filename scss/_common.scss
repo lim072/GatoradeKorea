@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #000;
+    header{
+        width: 100%;
+        height: 150px;
+        background-color: #000;
+        border-bottom: 1px solid #444;
+        .inner{
+            margin: 0 auto;
+            max-width: 1200px;
+            height: 100%;
+            h1{
+                text-align: center;
+                a{
+                    img{
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        padding-top: 10px;
+                        width: 150px;
+                        transition: 0.3s;
+                        &.logoHover{
+                            opacity: 0;
+
+                        }
+                    }
+                    
+
+                    &:hover{
+                        img{
+                            &.logoHover{
+                              opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            .gnb{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 120px;
+                
+                li{
+                    width: 25%;
+                    text-align: center;
+                    a{
+                        font: bold 18px/1 'Nunito';
+                        color: #fff;
+                        letter-spacing: 1px;
+                        transition: 0.5s;
+                        
+                        &.on{
+                            border-bottom: 3px solid orange;
+                            &:hover{
+                                border-bottom: 3px solid orange;
+                            }
+                        }
+                        &:hover{
+                            border-bottom: 1.5px solid lemonchiffon;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
