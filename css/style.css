@@ -72,7 +72,7 @@ body header .inner .gnb li a:hover {
 }
 
 main article {
-  height: 80vh;
+  height: 800px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -149,7 +149,6 @@ main #mainNow a:hover span::before {
 }
 main #mainNow img {
   width: 100%;
-  min-width: 1700px;
   object-fit: cover;
 }
 main #mainBrand a {
@@ -259,18 +258,25 @@ main #mainBrand .product {
     top: 0%;
     padding: 20px;
   }
-  main .YeonAhKim {
+  main #mainBrand .YeonAhKim {
     position: relative;
     left: -170px;
   }
-  main .product {
+  main #mainBrand .product {
     display: none;
   }
 }
 @media screen and (max-width: 400px) {
+  main article {
+    height: 700px;
+  }
   main #mainNow a {
     padding: 20px;
     margin-top: 100%;
+  }
+  main #mainBrand .YeonAhKim {
+    position: relative;
+    left: -150px;
   }
 }
 

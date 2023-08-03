@@ -1,5 +1,8 @@
 @media screen and (max-width : "400px") {
     main{
+        article{
+            height: 700px;
+        }
         #mainNow{
             a{
                 padding: 20px;
@@ -7,5 +10,14 @@
             }
                 
         }
+        #mainBrand{
+            .YeonAhKim{
+                position: relative;
+                left: -150px;
+                }
+          
+            }
+    
+         
     }
 }
