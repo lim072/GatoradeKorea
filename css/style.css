@@ -71,6 +71,14 @@ body header .inner .gnb li a.on:hover {
 body header .inner .gnb li a:hover {
   border-bottom: 1.5px solid lemonchiffon;
 }
+body footer {
+  width: 100%;
+  height: 150px;
+  border-top: 1px solid #444;
+}
+body footer .inner {
+  max-width: 1200px;
+}
 
 main article {
   height: 800px;
@@ -184,12 +192,14 @@ main #mainStory img {
   opacity: 0;
 }
 main #mainCompany a {
-  width: 50%;
+  width: 100%;
   top: 0;
-  left: 0%;
-  padding: 250px 50px 50px 50px;
+  left: 0;
+  padding: 100px 50px 50px 50px;
 }
 main #mainCompany img {
+  opacity: 1;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -201,12 +211,20 @@ main #mainCompany img {
   main #mainNow img {
     width: auto;
     position: relative;
-    left: -100px;
+    left: -50px;
   }
   main #mainBrand a {
     top: 50%;
     left: 0%;
     padding: 50px;
+  }
+  main #mainCompany {
+    background-image: url(/images/main/GatoradeCompany.jpg);
+    background-position: center left;
+    background-size: auto;
+  }
+  main #mainCompany img {
+    opacity: 0;
   }
 }
 @media screen and (max-width: 800px) {
@@ -255,6 +273,9 @@ main #mainCompany img {
     padding: 20px;
     margin-top: 100%;
   }
+  main #mainNow img {
+    margin-left: -50px;
+  }
   main #mainBrand a {
     padding: 20px;
   }
@@ -264,6 +285,9 @@ main #mainCompany img {
   }
   main #mainStory a {
     padding: 250px 20px 20px 20px;
+  }
+  main #mainCompany a {
+    padding: 100px 20px 20px 20px;
   }
 }
 
