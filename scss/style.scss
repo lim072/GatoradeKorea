@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Noto+Sans+KR:wght@100;400;500&family=Nunito&display=swap');
+
 
 @import "common";
 @import "main";
+
+// media 영역
+@import "media/web";
+@import "media/tablet";
+@import "media/mobile";
