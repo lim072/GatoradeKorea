@@ -1,5 +1,16 @@
 @media screen and (max-width : "800px") {
     main{
+        article{
+            a{
+                h2{
+                     font: bold 28px/1.2 'Noto+Sans+KR';
+                }
+                h3{
+                    font: 20px/1.2 'Noto+Sans+KR';
+                    
+                }
+            }
+        }
         #mainNow{
             a{
                 width: 100%;
@@ -12,7 +23,7 @@
             a{
                 width: 100%;
                 top: 0%;
-                padding: 20px;
+                padding: 50px;
     
                 }
             
@@ -25,5 +36,23 @@
                 display: none;
             }
         }
+        #mainStory{
+                background-image:none;
+            
+                img{
+                   opacity: 1;
+                   height: 100%;
+                   position: relative;
+                   left: -1700px;
+                }
+                a{
+                    width: 100%;
+                    padding: 250px 50px 50px 50px;
+            
+                }
+            
+        }
+        
     }
 }
+    
