@@ -1,6 +1,6 @@
 @media screen and (max-width : "1400px") {
     main{
-        article{
+        #mainNow{
             a{
                 padding: 50px;
             }
@@ -11,5 +11,15 @@
                 }
                 
         }
+        #mainBrand{
+            a{
+                top: 50%;
+                left: 0%;
+                padding: 50px;
+            }
+                
+        }
+       
+       
     }
 }

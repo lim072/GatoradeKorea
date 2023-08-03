@@ -1,12 +1,28 @@
 @media screen and (max-width : "800px") {
     main{
-        article{
+        #mainNow{
             a{
                 width: 100%;
                 left: 0%;
                 margin-top: 70%;
             }
                 
+        }
+        #mainBrand{
+            a{
+                width: 100%;
+                top: 0%;
+                padding: 20px;
+    
+                }
+            }
+    
+            .YeonAhKim{
+                position: relative;
+                left: -170px;
+                }
+            .product{
+                display: none;
         }
     }
 }
