@@ -179,7 +179,9 @@ main #mainBrand .product {
   width: 25%;
 }
 main #mainStory {
-  background-image: url(/images/main/Gatorade조던.jpg);
+  height: 800px;
+  width: 100%;
+  background-image: url("../images/main/Gatorade조던.jpg");
   background-position: right;
 }
 main #mainStory a {
@@ -219,7 +221,9 @@ main #mainCompany img {
     padding: 50px;
   }
   main #mainCompany {
-    background-image: url(/images/main/GatoradeCompany.jpg);
+    height: 800px;
+    width: 100%;
+    background-image: url("../images/main/GatoradeCompany.jpg");
     background-position: center left;
     background-size: auto;
   }
