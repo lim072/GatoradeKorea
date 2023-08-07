@@ -3,6 +3,14 @@
     .bg{
         background-image: url(../images/GatoradeBgMobile.jpg);
     }
+    header{
+        .gnb{
+            display: none;
+        }
+        .gnbMobile{
+            display: none;
+        }
+    }
     main{
         #mainNow{
             a{
