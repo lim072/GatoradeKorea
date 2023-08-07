@@ -17,15 +17,17 @@ a {
 
 body {
   overflow-x: hidden;
+  background-color: #444;
 }
 body .bg {
   width: 100vw;
-  height: 100vh;
-  background-image: url(../images/GatoradeBg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 100%;
   position: fixed;
   z-index: -1;
+}
+body .bg img {
+  width: 100%;
+  height: 100%;
 }
 body header {
   width: 100%;
@@ -357,11 +359,6 @@ main #mainCompany img {
   }
 }
 @media screen and (max-width: 400px) {
-  body .bg {
-    background-image: url(../images/GatoradeBgMobile.jpg);
-    background-position: center;
-    position: fixed;
-  }
   body header {
     height: 70px;
   }

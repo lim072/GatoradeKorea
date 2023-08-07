@@ -17,6 +17,7 @@ function setPos(){
 window.addEventListener("scroll",()=>{
     if(window.pageYOffset > 0){
         mainNow.style.right = "0"
+        
     }
     if(window.pageYOffset > 500){
         mainBrand.style.left = "0"
