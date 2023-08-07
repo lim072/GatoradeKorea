@@ -46,8 +46,8 @@ main{
                     height: 25px;
                     background-color: #fff;
                     top: -4.5px;
-                    left: -20px;
-                    clip-path: polygon(100% 0, 0 0, 76% 15%, 12% 31%, 63% 36%, 0 45%, 80% 58%, 7% 65%, 72% 80%, 0 100%, 100% 100%, 89% 46%);
+                    left: -30px;
+                    clip-path: polygon(25% 51%, 44% 45%, 13% 93%, 100% 23%, 69% 28%, 94% 3%, 41% 25%);
                     z-index: 1;
                     transition: 0.1s;
                     
@@ -69,7 +69,7 @@ main{
                     }
                     &::before{
                         opacity: 1;
-                        background-color: greenyellow;
+                        background-color: orange;
                     }
                 }
             }
