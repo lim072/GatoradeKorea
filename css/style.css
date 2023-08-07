@@ -360,11 +360,74 @@ main #mainCompany img {
   body .bg {
     background-image: url(../images/GatoradeBgMobile.jpg);
   }
-  body header .gnb {
+  body header {
+    height: 70px;
+  }
+  body header .inner h1 a img {
+    width: 80px;
+  }
+  body header .inner .gnb {
     display: none;
   }
-  body header .gnbMobile {
-    display: none;
+  body header .inner .gnbButton {
+    width: 40px;
+    height: 7px;
+    background-color: #fff;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  body header .inner .gnbButton::before, body header .inner .gnbButton::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.5s;
+  }
+  body header .inner .gnbButton::before {
+    top: -10px;
+  }
+  body header .inner .gnbButton::after {
+    top: 3px;
+  }
+  body header .inner .gnbButton:hover {
+    background-color: orange;
+  }
+  body header .inner .gnbButton:hover::before, body header .inner .gnbButton:hover::after {
+    background-color: orange;
+  }
+  body header .inner .gnbMobile {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: -500px;
+    padding: 10px;
+    flex-direction: column;
+    background-color: #000;
+    border-radius: 0px 0px 10px 0px;
+    transition: 0.5s;
+  }
+  body header .inner .gnbMobile li {
+    width: 100px;
+    height: 50px;
+  }
+  body header .inner .gnbMobile li a {
+    color: #fff;
+    font: bold 18px/50px "Nunito";
+  }
+  body header .inner .gnbMobile li a.on {
+    border-bottom: 3px solid orange;
+  }
+  body header .inner .gnbMobile li a.on:hover {
+    border-bottom: 3px solid orange;
+  }
+  body header .inner .gnbMobile li a:hover {
+    border-bottom: 1.5px solid lemonchiffon;
   }
   body main #mainNow a {
     padding: 20px;

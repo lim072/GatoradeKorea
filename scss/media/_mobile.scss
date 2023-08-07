@@ -4,11 +4,85 @@
         background-image: url(../images/GatoradeBgMobile.jpg);
     }
     header{
-        .gnb{
-            display: none;
-        }
-        .gnbMobile{
-            display: none;
+        height: 70px;
+        .inner{
+            h1{
+                a{
+                    img{
+                        width: 80px;
+                    }
+                }
+            }
+            .gnb{
+                display: none;
+            }
+            .gnbButton{
+                width: 40px;
+                height: 7px;
+                background-color: #fff;
+                position: relative;
+                top: 30px;
+                left: 10px;
+                border-radius: 5px;
+                transition: 0.5s;
+
+                &::before,
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 40px;
+                    height: 7px;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    position: relative;
+                    transition: 0.5s;
+                    
+                }
+                &::before{
+                    top: -10px;
+                    
+                }
+                &::after{
+                    top: 3px;
+                }
+                &:hover{
+                    background-color: orange;
+                    &::before,
+                    &::after{
+                        background-color: orange;
+                    }
+                }
+            }
+            .gnbMobile{
+                display: flex;
+                position: absolute;
+                top: 70px;
+                left: -500px;
+                padding: 10px;
+                flex-direction: column;
+                background-color: #000;
+                border-radius: 0px 0px 10px 0px;
+                transition: 0.5s;
+                
+                li{
+                    width: 100px;
+                    height: 50px;
+                    a{
+                        color: #fff;
+                        font: bold 18px/50px 'Nunito';
+                        &.on{
+                            border-bottom: 3px solid orange;
+                            &:hover{
+                                border-bottom: 3px solid orange;
+                            }
+                        }
+                        &:hover{
+                            border-bottom: 1.5px solid lemonchiffon;
+                        }
+                    }
+
+                }
+            }
         }
     }
     main{
