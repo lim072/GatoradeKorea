@@ -1,4 +1,8 @@
 @media screen and (max-width : "400px") {
+    body{
+    .bg{
+        background-image: url(../images/GatoradeBgMobile.jpg);
+    }
     main{
         #mainNow{
             a{
@@ -37,4 +41,5 @@
     
          
     }
+}
 }
