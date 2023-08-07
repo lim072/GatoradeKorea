@@ -22,7 +22,10 @@ body header {
   width: 100%;
   height: 150px;
   background-color: #000;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #aaa;
+  box-shadow: 1px 1px 5px #000;
+  position: relative;
+  z-index: 100;
 }
 body header .inner {
   margin: 0 auto;
@@ -73,11 +76,69 @@ body header .inner .gnb li a:hover {
 }
 body footer {
   width: 100%;
-  height: 150px;
   border-top: 1px solid #444;
 }
 body footer .inner {
-  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body footer .inner .footerLogo {
+  padding: 20px;
+}
+body footer .inner .footerLogo h2 {
+  text-align: center;
+}
+body footer .inner .footerLogo h2 a img {
+  width: 150px;
+  filter: grayscale(0.5);
+}
+body footer .inner .footerLogo span {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #bbb;
+}
+body footer .inner .footerContent {
+  padding: 20px;
+}
+body footer .inner .footerContent .footerMenu {
+  width: 100%;
+}
+body footer .inner .footerContent .footerMenu ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body footer .inner .footerContent .footerMenu ul li {
+  margin-right: 20px;
+  text-align: center;
+}
+body footer .inner .footerContent .footerMenu ul li:nth-child(1) a::after, body footer .inner .footerContent .footerMenu ul li:nth-child(2) a::after, body footer .inner .footerContent .footerMenu ul li:nth-child(3) a::after {
+  content: "|";
+  margin-left: 10px;
+}
+body footer .inner .footerContent .footerMenu ul li a {
+  font: bold 13px/1 "맑은 고딕";
+  color: #bbb;
+}
+body footer .inner .footerContent .sns {
+  margin-top: 20px;
+}
+body footer .inner .footerContent .sns ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body footer .inner .footerContent .sns ul li {
+  margin-right: 20px;
+}
+body footer .inner .footerContent .sns ul li a {
+  font: 21px/1 "맑은 고딕";
+  color: #bbb;
 }
 
 main article {
@@ -270,9 +331,6 @@ main #mainCompany img {
   }
 }
 @media screen and (max-width: 400px) {
-  main article {
-    height: 700px;
-  }
   main #mainNow a {
     padding: 20px;
     margin-top: 100%;

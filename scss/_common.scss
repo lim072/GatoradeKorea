@@ -15,7 +15,10 @@ body{
         width: 100%;
         height: 150px;
         background-color: #000;
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid #aaa;
+        box-shadow: 1px 1px 5px #000;
+        position: relative;
+        z-index: 100;
         
         .inner{
             margin: 0 auto;
@@ -78,10 +81,82 @@ body{
     }
     footer{
         width: 100%;
-        height: 150px;
         border-top: 1px solid #444;
         .inner{
-            max-width: 1200px;
+           width: 100%;
+           display: flex;
+           flex-wrap: wrap;
+            justify-content: space-evenly;
+           .footerLogo{
+          
+            padding: 20px;
+            h2{
+                text-align: center;
+                a{
+                    img{
+                        width: 150px;
+                        filter: grayscale(0.5);
+                    }
+                }
+            }
+
+            span{
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                color: #bbb;
+            }
+           }
+           .footerContent{
+            padding: 20px;
+           
+
+                .footerMenu{
+                    width: 100%;
+                    ul{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    li{
+                        margin-right: 20px;
+                        text-align: center;
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3){
+                            a{
+                                &::after{
+                                    content: "|";
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    
+                            a{
+                                font: bold 13px/1 '맑은 고딕';
+                                color: #bbb;
+                            }
+                        }
+                    }
+                }
+                .sns{
+                    margin-top: 20px;
+                    ul{
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        li{
+                            margin-right: 20px;
+                            a{
+                                
+                                font: 21px/1 '맑은 고딕';
+                                color: #bbb;
+                            }
+                        }
+                    }
+                }
+           }
         }
     }
 }
