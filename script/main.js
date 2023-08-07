@@ -18,13 +18,13 @@ window.addEventListener("scroll",()=>{
     if(window.pageYOffset > 0){
         mainNow.style.right = "0"
     }
-    if(window.pageYOffset > 750){
+    if(window.pageYOffset > 500){
         mainBrand.style.left = "0"
     }
-    if(window.pageYOffset > 1550){
+    if(window.pageYOffset > 1000){
         mainStory.style.right = "0"
     }
-    if(window.pageYOffset > 2350){
+    if(window.pageYOffset > 1500){
         mainCompany.style.left = "0"
     }    
 })
