@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  position: absolute;
+  top: 5000px;
+  left: 5000px;
+}
+
 body {
   overflow-x: hidden;
   background-color: #444;
@@ -461,6 +467,9 @@ main #mainCompany img {
   }
   body main #mainStory a {
     padding: 250px 20px 20px 20px;
+  }
+  body main #mainStory img {
+    left: -1900px;
   }
   body main #mainCompany a {
     padding: 100px 20px 20px 20px;

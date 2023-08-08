@@ -9,6 +9,11 @@ ul,ol,li{
 a{
     text-decoration: none;
 }
+.hidden{
+    position: absolute;
+    top: 5000px;
+    left: 5000px;
+}
 body{
     overflow-x: hidden;
     background-color: #444;
