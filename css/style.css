@@ -184,7 +184,7 @@ main article {
   width: 100%;
   overflow: hidden;
   position: relative;
-  transition: 0.7s;
+  transition: 1s;
   border: 1px solid #999;
 }
 main article a {
