@@ -1,5 +1,11 @@
 @media screen and (max-width : "400px") {
     body{
+        .bg{
+            .mobileBg{
+                width: 100%;
+                opacity: 1;
+            }
+        }
     header{
         height: 70px;
         .inner{
