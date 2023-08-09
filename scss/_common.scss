@@ -16,12 +16,12 @@ a{
 }
 body{
     overflow-x: hidden;
-    background-color: #ddd;
+    
     .bg{
         width: 100vw;
         height: 100%;
         position: fixed;
-        z-index: -1;
+        z-index: -2;
         background-image: url(../images/GatoradeBg.jpg);
         background-position: center;
 
@@ -42,7 +42,7 @@ body{
         background-color: #000;
         border-bottom: 1px solid #aaa;
         box-shadow: 1px 1px 5px #000;
-        position: fixed;
+        position: relative;
         z-index: 100;
         
         .inner{

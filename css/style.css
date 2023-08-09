@@ -23,13 +23,12 @@ a {
 
 body {
   overflow-x: hidden;
-  background-color: #ddd;
 }
 body .bg {
   width: 100vw;
   height: 100%;
   position: fixed;
-  z-index: -1;
+  z-index: -2;
   background-image: url(../images/GatoradeBg.jpg);
   background-position: center;
 }
@@ -49,7 +48,7 @@ body header {
   background-color: #000;
   border-bottom: 1px solid #aaa;
   box-shadow: 1px 1px 5px #000;
-  position: fixed;
+  position: relative;
   z-index: 100;
 }
 body header .inner {
@@ -174,7 +173,6 @@ body footer .inner .footerContent .sns ul li a {
 }
 
 main {
-  padding-top: 150px;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -344,41 +342,44 @@ main #mainCompany img {
   }
 }
 @media screen and (max-width: 800px) {
-  main article a h2 {
+  body main article a h2 {
     font: bold 25px/1.2 "Noto+Sans+KR";
   }
-  main article a h3 {
+  body main article a h3 {
     font: 17px/1.5 "Noto+Sans+KR";
   }
-  main #mainNow a {
+  body main #mainNow a {
     width: 100%;
     left: 0%;
     margin-top: 60%;
   }
-  main #mainBrand a {
+  body main #mainBrand a {
     width: 100%;
     top: 0%;
     padding: 50px;
   }
-  main #mainBrand .YeonAhKim {
+  body main #mainBrand .YeonAhKim {
     position: relative;
     left: -170px;
   }
-  main #mainBrand .product {
+  body main #mainBrand .product {
     display: none;
   }
-  main #mainStory {
+  body main #mainStory {
     background-image: none;
   }
-  main #mainStory img {
+  body main #mainStory img {
     opacity: 1;
     height: 100%;
     position: relative;
     left: -1700px;
   }
-  main #mainStory a {
+  body main #mainStory a {
     width: 100%;
     padding: 250px 50px 50px 50px;
+  }
+  body #visual h3 {
+    font: bold 30px/1.5 "Noto+Sans+KR";
   }
 }
 @media screen and (max-width: 400px) {
@@ -387,6 +388,7 @@ main #mainCompany img {
     opacity: 1;
   }
   body header {
+    position: fixed;
     height: 70px;
   }
   body header .inner h1 a img {
@@ -482,6 +484,132 @@ main #mainCompany img {
   body main #mainCompany a {
     padding: 100px 20px 20px 20px;
   }
+  body #visual {
+    height: 200px;
+    position: relative;
+    top: 70px;
+  }
+  body #visual h3 {
+    font: bold 20px/1.5 "Noto+Sans+KR";
+  }
+  body #companyContent {
+    padding-top: 70px;
+  }
+}
+#visual {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-image: url(../../images/company/gatoradeCompanyMain.jpg);
+  background-position: left bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#visual h3 {
+  font: bold 50px/1.5 "Noto+Sans+KR";
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  text-shadow: 5px 5px 10px #000;
+}
+
+#companyContent > p {
+  padding: 20px;
+  font: bold 18px/1.7 "Noto+Sans+KR";
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+#companyContent .inner {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+#companyContent .inner .con1 {
+  width: 100%;
+  padding: 20px;
+}
+#companyContent .inner .con1 .conBox {
+  display: flex;
+}
+#companyContent .inner .con1 .conBox > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#companyContent .inner .con1 .conBox > div p {
+  width: 90%;
+  font: 15px/1.2 "Noto+Sans+KR";
+  height: 33.3333333333%;
+  padding-left: 40px;
+}
+#companyContent .inner .con1 .conBox > div p a {
+  display: block;
+}
+#companyContent .inner .con1 .conBox > div p a button {
+  border: none;
+  outline: none;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: greenyellow;
+  color: #fff;
+  font: bold 15px/25px "Noto+Sans+KR";
+  cursor: pointer;
+}
+#companyContent .inner .con1 .conBox > div p a span {
+  margin-left: 10px;
+  transition: 0.3s;
+  position: relative;
+  top: 3px;
+  z-index: 2;
+}
+#companyContent .inner .con1 .conBox > div p a span::before {
+  display: block;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  background-color: #fff;
+  top: -4.5px;
+  left: -30px;
+  clip-path: polygon(25% 51%, 44% 45%, 13% 93%, 100% 23%, 69% 28%, 94% 3%, 41% 25%);
+  z-index: 1;
+  transition: 0.1s;
+}
+#companyContent .inner .con1 .conBox > div p a span i {
+  font-size: 22px;
+  color: greenyellow;
+}
+#companyContent .inner .con1 .conBox > div p a:hover span {
+  margin-left: 30px;
+}
+#companyContent .inner .con1 .conBox > div p a:hover span i {
+  color: greenyellow;
+}
+#companyContent .inner .con1 .conBox > div p a:hover span::before {
+  opacity: 1;
+  background-color: orange;
+}
+#companyContent .inner .con1 .conBox > div p::before {
+  content: "";
+  display: block;
+  background-image: url(../../images/getoradeTexteffect.png);
+  width: 15px;
+  height: 40px;
+  background-size: cover;
+  position: relative;
+  top: 40px;
+  left: -25px;
+}
+#companyContent .inner .con1 .conBox img {
+  margin-top: 30px;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

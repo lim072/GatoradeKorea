@@ -4,9 +4,11 @@
             .mobileBg{
                 width: 100%;
                 opacity: 1;
+                
             }
         }
     header{
+        position: fixed;
         height: 70px;
         .inner{
             h1{
@@ -130,6 +132,17 @@
         }
     
          
+    }
+    #visual{
+        height: 200px;
+        position: relative;
+        top: 70px;
+        h3{
+            font: bold 20px/1.5 'Noto+Sans+KR';
+        }
+    }
+    #companyContent{
+        padding-top: 70px;
     }
 }
 }
