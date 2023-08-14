@@ -515,9 +515,12 @@ main #mainCompany img {
   text-shadow: 5px 5px 10px #000;
 }
 
+#companyContent {
+  margin-bottom: 50px;
+}
 #companyContent > p {
   padding: 20px;
-  font: bold 18px/1.7 "Noto+Sans+KR";
+  font: bold 17px/1.7 "Noto+Sans+KR";
   margin: 0 auto;
   max-width: 1000px;
   text-align: center;
@@ -556,7 +559,7 @@ main #mainCompany img {
   width: 70px;
   height: 25px;
   border-radius: 10px;
-  background-color: greenyellow;
+  background-color: yellowgreen;
   color: #fff;
   font: bold 15px/25px "Noto+Sans+KR";
   cursor: pointer;
@@ -584,7 +587,7 @@ main #mainCompany img {
 }
 #companyContent .inner .con1 .conBox > div p a span i {
   font-size: 22px;
-  color: greenyellow;
+  color: yellowgreen;
 }
 #companyContent .inner .con1 .conBox > div p a:hover span {
   margin-left: 30px;
@@ -610,6 +613,22 @@ main #mainCompany img {
 #companyContent .inner .con1 .conBox img {
   margin-top: 30px;
   width: 50%;
+}
+
+#companyContent2 {
+  margin-bottom: 50px;
+}
+#companyContent2 > .conBox {
+  display: flex;
+}
+#companyContent2 > .conBox > div {
+  width: 50%;
+  height: 350px;
+  overflow: hidden;
+}
+#companyContent2 > .conBox > div img {
+  object-fit: fill;
+  object-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

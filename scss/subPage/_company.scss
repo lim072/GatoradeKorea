@@ -17,9 +17,10 @@
     }
 }
 #companyContent{
+    margin-bottom: 50px;
     >p{
         padding: 20px;
-        font: bold 18px/1.7 'Noto+Sans+KR';
+        font: bold 17px/1.7 'Noto+Sans+KR';
         margin: 0 auto;
         max-width: 1000px;
         text-align: center;
@@ -52,7 +53,7 @@
                         width: 70px;
                         height: 25px;
                         border-radius: 10px;
-                        background-color: greenyellow;
+                        background-color: yellowgreen;
                         color: #fff;
                         font: bold 15px/25px 'Noto+Sans+KR';
                         cursor: pointer;
@@ -80,7 +81,7 @@
                             }
                             i{
                                 font-size: 22px;
-                                color: greenyellow; 
+                                color: yellowgreen; 
                                
                             }
                         }
@@ -118,6 +119,24 @@
                     margin-top: 30px;
                     width: 50%;
                 }
+            }
+        }
+    }
+}
+#companyContent2{
+    margin-bottom: 50px;
+    >.conBox{
+        
+        display: flex;
+
+        >div{
+            width: 50%;
+            height: 350px;
+            overflow: hidden;
+            img{
+                
+                object-fit: fill;
+                object-position: center;
             }
         }
     }
