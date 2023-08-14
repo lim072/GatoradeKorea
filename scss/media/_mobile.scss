@@ -133,7 +133,7 @@
     
          
     }
-    #visual{
+    #companyVisual{
         height: 200px;
         position: relative;
         top: 70px;
@@ -143,6 +143,24 @@
     }
     #companyContent{
         padding-top: 70px;
+        margin-bottom: 70px;
+    }
+    #companyContent2{
+        margin-bottom:70px;
+        >.conBox{
+              >div{
+                  height: 100%;
+              }
+        }
+    }
+    #companyContent3{
+        margin-bottom: 70px;
+        >.conBox{
+            >div{
+                height: 100%;
+            }
+      }
     }
 }
+
 }

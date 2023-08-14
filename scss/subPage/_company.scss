@@ -1,4 +1,4 @@
-#visual{
+#companyVisual{
     width: 100%;
     height: 300px;
     overflow: hidden;
@@ -17,10 +17,10 @@
     }
 }
 #companyContent{
-    margin-bottom: 50px;
+
     >p{
         padding: 20px;
-        font: bold 17px/1.7 'Noto+Sans+KR';
+        font: bold 20px/1.7 'Noto+Sans+KR';
         margin: 0 auto;
         max-width: 1000px;
         text-align: center;
@@ -124,9 +124,10 @@
     }
 }
 #companyContent2{
-    margin-bottom: 50px;
     >.conBox{
-        
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
         display: flex;
 
         >div{
@@ -134,9 +135,190 @@
             height: 350px;
             overflow: hidden;
             img{
-                
-                object-fit: fill;
-                object-position: center;
+                width: 500px;
+            }
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+            width: 50%;
+            h3{
+                font: bold 20px/1.1 'Noto+Sans+KR';
+            }
+            p{
+                width: 90%;
+                font: 15px/1.2 'Noto+Sans+KR';
+                a{  
+                    display: block;
+                    button{
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                    display: inline-block;
+                    width: 70px;
+                    height: 25px;
+                    border-radius: 10px;
+                    background-color: yellowgreen;
+                    color: #fff;
+                    font: bold 15px/25px 'Noto+Sans+KR';
+                    cursor: pointer;
+                    }
+                    span{
+                        margin-left: 10px;
+                        transition: 0.3s;
+                        position: relative;
+                        top: 3px;
+                        z-index: 2;
+                        &::before{
+                            display: block;
+                            opacity: 0;
+                            content: "";
+                            position: absolute;
+                            width: 30px;
+                            height: 25px;
+                            background-color: #fff;
+                            top: -4.5px;
+                            left: -30px;
+                            clip-path: polygon(25% 51%, 44% 45%, 13% 93%, 100% 23%, 69% 28%, 94% 3%, 41% 25%);
+                            z-index: 1;
+                            transition: 0.1s;
+                            
+                        }
+                        i{
+                            font-size: 22px;
+                            color: yellowgreen; 
+                           
+                        }
+                    }
+                    &:hover{
+                     
+                        span{
+                            margin-left: 30px;
+                            i{
+                                color: greenyellow;
+                            }
+                            &::before{
+                                opacity: 1;
+                                background-color: orange;
+                            }
+                        }
+                    }                        
+                }
+
+                &::before{
+                    content: '';
+                    display: block;
+                    background-image: url(../../images/getoradeTexteffect.png);
+                    width: 15px;
+                    height: 40px;
+                    background-size: cover;
+                    position: relative;
+                    top: 40px;
+                    left: -25px;
+                }    
+            }
+        }
+    }
+}
+
+#companyContent3{
+    >.conBox{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+
+        >div{
+            width: 50%;
+            height: 350px;
+            overflow: hidden;
+            img{
+                width: 500px;
+            }
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+            width: 50%;
+            h3{
+                font: bold 20px/1.1 'Noto+Sans+KR';
+            }
+            p{
+                width: 90%;
+                font: 15px/1.2 'Noto+Sans+KR';
+                a{  
+                    display: block;
+                    button{
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                    display: inline-block;
+                    width: 70px;
+                    height: 25px;
+                    border-radius: 10px;
+                    background-color: yellowgreen;
+                    color: #fff;
+                    font: bold 15px/25px 'Noto+Sans+KR';
+                    cursor: pointer;
+                    }
+                    span{
+                        margin-left: 10px;
+                        transition: 0.3s;
+                        position: relative;
+                        top: 3px;
+                        z-index: 2;
+                        &::before{
+                            display: block;
+                            opacity: 0;
+                            content: "";
+                            position: absolute;
+                            width: 30px;
+                            height: 25px;
+                            background-color: #fff;
+                            top: -4.5px;
+                            left: -30px;
+                            clip-path: polygon(25% 51%, 44% 45%, 13% 93%, 100% 23%, 69% 28%, 94% 3%, 41% 25%);
+                            z-index: 1;
+                            transition: 0.1s;
+                            
+                        }
+                        i{
+                            font-size: 22px;
+                            color: yellowgreen; 
+                           
+                        }
+                    }
+                    &:hover{
+                     
+                        span{
+                            margin-left: 30px;
+                            i{
+                                color: greenyellow;
+                            }
+                            &::before{
+                                opacity: 1;
+                                background-color: orange;
+                            }
+                        }
+                    }                        
+                }
+
+                &::before{
+                    content: '';
+                    display: block;
+                    background-image: url(../../images/getoradeTexteffect.png);
+                    width: 15px;
+                    height: 40px;
+                    background-size: cover;
+                    position: relative;
+                    top: 40px;
+                    left: -25px;
+                }    
             }
         }
     }

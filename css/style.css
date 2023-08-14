@@ -17,7 +17,7 @@ a {
 
 .hidden {
   position: absolute;
-  top: 5000px;
+  top: -5000px;
   left: 5000px;
 }
 
@@ -31,6 +31,7 @@ body .bg {
   z-index: -2;
   background-image: url(../images/GatoradeBg.jpg);
   background-position: center;
+  filter: grayscale(0.3);
 }
 body .bg .mobileBg {
   opacity: 0;
@@ -40,7 +41,7 @@ body .bg .backLogo {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.7;
+  opacity: 0.9;
 }
 body header {
   width: 100%;
@@ -378,8 +379,74 @@ main #mainCompany img {
     width: 100%;
     padding: 250px 50px 50px 50px;
   }
-  body #visual h3 {
+  body #companyVisual h3 {
     font: bold 30px/1.5 "Noto+Sans+KR";
+  }
+  body #companyContent {
+    margin-bottom: 50px;
+  }
+  body #companyContent > p {
+    font: bold 18px/1.7 "Noto+Sans+KR";
+  }
+  body #companyContent .inner .con1 .conBox {
+    flex-direction: column;
+  }
+  body #companyContent .inner .con1 .conBox > div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  body #companyContent .inner .con1 .conBox > div p {
+    width: 100%;
+  }
+  body #companyContent .inner .con1 .conBox img {
+    margin-top: 0px;
+    width: 100%;
+  }
+  body #companyContent2 {
+    margin-bottom: 50px;
+  }
+  body #companyContent2 > .conBox {
+    flex-direction: column-reverse;
+  }
+  body #companyContent2 > .conBox > div {
+    width: 100%;
+  }
+  body #companyContent2 > .conBox > div img {
+    width: 100%;
+  }
+  body #companyContent2 > .conBox article {
+    align-items: center;
+    padding-left: 10px;
+    width: 100%;
+  }
+  body #companyContent2 > .conBox article h3 {
+    font: bold 18px/1.1 "Noto+Sans+KR";
+  }
+  body #companyContent2 > .conBox article p {
+    margin-bottom: 30px;
+  }
+  body #companyContent3 {
+    margin-bottom: 50px;
+  }
+  body #companyContent3 > .conBox {
+    flex-direction: column-reverse;
+  }
+  body #companyContent3 > .conBox > div {
+    width: 100%;
+  }
+  body #companyContent3 > .conBox > div img {
+    width: 100%;
+  }
+  body #companyContent3 > .conBox article {
+    align-items: center;
+    padding-left: 10px;
+    width: 100%;
+  }
+  body #companyContent3 > .conBox article h3 {
+    font: bold 18px/1.1 "Noto+Sans+KR";
+  }
+  body #companyContent3 > .conBox article p {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -484,19 +551,32 @@ main #mainCompany img {
   body main #mainCompany a {
     padding: 100px 20px 20px 20px;
   }
-  body #visual {
+  body #companyVisual {
     height: 200px;
     position: relative;
     top: 70px;
   }
-  body #visual h3 {
+  body #companyVisual h3 {
     font: bold 20px/1.5 "Noto+Sans+KR";
   }
   body #companyContent {
     padding-top: 70px;
+    margin-bottom: 70px;
+  }
+  body #companyContent2 {
+    margin-bottom: 70px;
+  }
+  body #companyContent2 > .conBox > div {
+    height: 100%;
+  }
+  body #companyContent3 {
+    margin-bottom: 70px;
+  }
+  body #companyContent3 > .conBox > div {
+    height: 100%;
   }
 }
-#visual {
+#companyVisual {
   width: 100%;
   height: 300px;
   overflow: hidden;
@@ -507,7 +587,7 @@ main #mainCompany img {
   justify-content: center;
   align-items: center;
 }
-#visual h3 {
+#companyVisual h3 {
   font: bold 50px/1.5 "Noto+Sans+KR";
   width: 100%;
   color: #fff;
@@ -515,12 +595,9 @@ main #mainCompany img {
   text-shadow: 5px 5px 10px #000;
 }
 
-#companyContent {
-  margin-bottom: 50px;
-}
 #companyContent > p {
   padding: 20px;
-  font: bold 17px/1.7 "Noto+Sans+KR";
+  font: bold 20px/1.7 "Noto+Sans+KR";
   margin: 0 auto;
   max-width: 1000px;
   text-align: center;
@@ -615,10 +692,10 @@ main #mainCompany img {
   width: 50%;
 }
 
-#companyContent2 {
-  margin-bottom: 50px;
-}
 #companyContent2 > .conBox {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
 }
 #companyContent2 > .conBox > div {
@@ -627,8 +704,175 @@ main #mainCompany img {
   overflow: hidden;
 }
 #companyContent2 > .conBox > div img {
-  object-fit: fill;
-  object-position: center;
+  width: 500px;
+}
+#companyContent2 > .conBox article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  width: 50%;
+}
+#companyContent2 > .conBox article h3 {
+  font: bold 20px/1.1 "Noto+Sans+KR";
+}
+#companyContent2 > .conBox article p {
+  width: 90%;
+  font: 15px/1.2 "Noto+Sans+KR";
+}
+#companyContent2 > .conBox article p a {
+  display: block;
+}
+#companyContent2 > .conBox article p a button {
+  border: none;
+  outline: none;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  color: #fff;
+  font: bold 15px/25px "Noto+Sans+KR";
+  cursor: pointer;
+}
+#companyContent2 > .conBox article p a span {
+  margin-left: 10px;
+  transition: 0.3s;
+  position: relative;
+  top: 3px;
+  z-index: 2;
+}
+#companyContent2 > .conBox article p a span::before {
+  display: block;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  background-color: #fff;
+  top: -4.5px;
+  left: -30px;
+  clip-path: polygon(25% 51%, 44% 45%, 13% 93%, 100% 23%, 69% 28%, 94% 3%, 41% 25%);
+  z-index: 1;
+  transition: 0.1s;
+}
+#companyContent2 > .conBox article p a span i {
+  font-size: 22px;
+  color: yellowgreen;
+}
+#companyContent2 > .conBox article p a:hover span {
+  margin-left: 30px;
+}
+#companyContent2 > .conBox article p a:hover span i {
+  color: greenyellow;
+}
+#companyContent2 > .conBox article p a:hover span::before {
+  opacity: 1;
+  background-color: orange;
+}
+#companyContent2 > .conBox article p::before {
+  content: "";
+  display: block;
+  background-image: url(../../images/getoradeTexteffect.png);
+  width: 15px;
+  height: 40px;
+  background-size: cover;
+  position: relative;
+  top: 40px;
+  left: -25px;
+}
+
+#companyContent3 > .conBox {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#companyContent3 > .conBox > div {
+  width: 50%;
+  height: 350px;
+  overflow: hidden;
+}
+#companyContent3 > .conBox > div img {
+  width: 500px;
+}
+#companyContent3 > .conBox article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  width: 50%;
+}
+#companyContent3 > .conBox article h3 {
+  font: bold 20px/1.1 "Noto+Sans+KR";
+}
+#companyContent3 > .conBox article p {
+  width: 90%;
+  font: 15px/1.2 "Noto+Sans+KR";
+}
+#companyContent3 > .conBox article p a {
+  display: block;
+}
+#companyContent3 > .conBox article p a button {
+  border: none;
+  outline: none;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  color: #fff;
+  font: bold 15px/25px "Noto+Sans+KR";
+  cursor: pointer;
+}
+#companyContent3 > .conBox article p a span {
+  margin-left: 10px;
+  transition: 0.3s;
+  position: relative;
+  top: 3px;
+  z-index: 2;
+}
+#companyContent3 > .conBox article p a span::before {
+  display: block;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  background-color: #fff;
+  top: -4.5px;
+  left: -30px;
+  clip-path: polygon(25% 51%, 44% 45%, 13% 93%, 100% 23%, 69% 28%, 94% 3%, 41% 25%);
+  z-index: 1;
+  transition: 0.1s;
+}
+#companyContent3 > .conBox article p a span i {
+  font-size: 22px;
+  color: yellowgreen;
+}
+#companyContent3 > .conBox article p a:hover span {
+  margin-left: 30px;
+}
+#companyContent3 > .conBox article p a:hover span i {
+  color: greenyellow;
+}
+#companyContent3 > .conBox article p a:hover span::before {
+  opacity: 1;
+  background-color: orange;
+}
+#companyContent3 > .conBox article p::before {
+  content: "";
+  display: block;
+  background-image: url(../../images/getoradeTexteffect.png);
+  width: 15px;
+  height: 40px;
+  background-size: cover;
+  position: relative;
+  top: 40px;
+  left: -25px;
 }
 
 /*# sourceMappingURL=style.css.map */
