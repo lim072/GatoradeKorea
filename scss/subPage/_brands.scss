@@ -2,7 +2,7 @@
     width: 100%;
     height: 300px;
     overflow: hidden;
-    background-image: url(../../images/brands/gatoradeBrandsMain2.jpg);
+    background-image: url(../images/brands/gatoradeBrandsMain.jpg);
     background-position: left;
     background-size: cover;
     display: flex;
@@ -14,5 +14,138 @@
         color: #fff;
         text-align: center;
         text-shadow: 5px 5px 10px #000;       
+    }
+}
+#brandsContent{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden;
+    margin-bottom: 50px;
+   
+    
+    h2{
+        display: block;
+        max-width: 1000px;
+        margin: 20px auto;
+        font: bold 21px/1.5 'Noto+Sans+KR';
+        padding-left: 10px;
+        border-left: 8px solid orange;
+    }
+    .brandsLoop{
+        width: 100vw;
+        height: 550px;
+        margin: 0 auto;
+        position: relative;
+
+        .slide{
+            width: 100%;
+            height: 100%;
+            margin-top: 40px;
+            position: relative;
+
+            li{
+                width: 350px;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+
+                h4{
+                    position: absolute;
+                    bottom: -135px;
+                    width: 100%;
+                    display: block;
+                    font: 16px/1.5 'Noto+Sans+KR';
+                    white-space: nowrap;
+                    text-align: center;
+                    color: #999;
+                }
+                img{
+                    position: relative;
+                    top: 100px;
+                    left: -5px;
+                }
+                a{
+                    width: 115px;
+                    position: absolute;
+                    display: none;
+                    bottom: -140px;
+                    text-align: center;
+                    font: 20px/1.5 'Noto+Sans+KR';
+                    background-color: #000;
+                    border-radius: 20px;
+                    color: #fff;
+                    left: 48%;
+                    transform: translateX(-50%);
+                    
+                }
+            }
+            
+            //li 각자 위치 조정
+            li{
+                &:nth-of-type(1){
+                    transform: translate(-250% ,-50%);
+                    img{
+                        transform: scale(0.8);
+                    }
+                }
+                &:nth-of-type(2){
+                    transform: translate(-150% ,-50%);
+                    img{
+                        transform: scale(0.8);
+                    }
+                }
+                &:nth-of-type(3){
+                    h4{
+                        top: 0;
+                        font: bold 50px/1.5 'Noto+Sans+KR';
+                        color: #444;    
+                    }
+                    a{
+                        display: block;
+                    }
+                }
+                &:nth-of-type(4){
+                    transform: translate(50% ,-50%);
+                 
+                    img{
+                        transform: scale(0.8);
+                    }
+                }
+                &:nth-of-type(5){
+                    transform: translate(150% ,-50%);
+                    img{
+                        transform: scale(0.8);
+                    }
+                }
+            }
+        }
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        div{
+            cursor: pointer;
+			width: 120px;
+			height: 36px;
+			border-radius: 18px;
+			background-color: #999;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font: 12px/1 'arial';
+			color: #fff;
+         
+
+			&:hover {
+				background-color: #555;
+			}
+		
+        }
     }
 }
