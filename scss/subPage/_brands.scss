@@ -51,6 +51,7 @@
                 left: 50%;
                 transform: translate(-50%,-50%);
                 text-align: center;
+                transition: 0.5s;
 
                 h4{
                     position: absolute;
@@ -61,11 +62,13 @@
                     white-space: nowrap;
                     text-align: center;
                     color: #999;
+                    transition: 0.5s;
                 }
                 img{
                     position: relative;
                     top: 100px;
                     left: -5px;
+                    transition: 0.5s;
                 }
                 a{
                     width: 115px;
@@ -79,6 +82,7 @@
                     color: #fff;
                     left: 48%;
                     transform: translateX(-50%);
+                    transition: 0.5s;
                     
                 }
             }
