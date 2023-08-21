@@ -946,22 +946,23 @@ main #mainCompany img {
 #brandsContent .brandsLoop .slide li img {
   position: relative;
   top: 100px;
-  left: -5px;
+  left: -7px;
   transition: 0.5s;
 }
 #brandsContent .brandsLoop .slide li a {
   width: 115px;
   position: absolute;
-  display: none;
+  display: block;
   bottom: -140px;
+  opacity: 0;
   text-align: center;
-  font: 20px/1.5 "Noto+Sans+KR";
-  background-color: #000;
+  font: 18px/1.8 "Noto+Sans+KR";
+  background-color: green;
   border-radius: 20px;
   color: #fff;
   left: 48%;
   transform: translateX(-50%);
-  transition: 0.5s;
+  transition: opacity 0.2s;
 }
 #brandsContent .brandsLoop .slide li:nth-of-type(1) {
   transform: translate(-250%, -50%);
@@ -978,10 +979,13 @@ main #mainCompany img {
 #brandsContent .brandsLoop .slide li:nth-of-type(3) h4 {
   top: 0;
   font: bold 50px/1.5 "Noto+Sans+KR";
-  color: #444;
+  color: #555;
 }
 #brandsContent .brandsLoop .slide li:nth-of-type(3) a {
-  display: block;
+  opacity: 1;
+}
+#brandsContent .brandsLoop .slide li:nth-of-type(3) a:hover {
+  opacity: 0.7;
 }
 #brandsContent .brandsLoop .slide li:nth-of-type(4) {
   transform: translate(50%, -50%);
@@ -1004,18 +1008,19 @@ main #mainCompany img {
 }
 #brandsContent nav div {
   cursor: pointer;
-  width: 120px;
+  width: 100px;
   height: 36px;
   border-radius: 18px;
-  background-color: #999;
+  background-color: yellowgreen;
   display: flex;
   justify-content: center;
   align-items: center;
   font: 12px/1 "arial";
   color: #fff;
+  transition: 0.2s;
 }
 #brandsContent nav div:hover {
-  background-color: #555;
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=style.css.map */
