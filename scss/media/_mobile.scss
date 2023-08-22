@@ -162,6 +162,43 @@
             }
       }
     }
+    #brandsContent{
+        .brandsLoop{
+            top: 20px;
+            height: 400px;
+            .slide{
+                
+                //li 각자 위치 조정
+                li{
+                    opacity: 0;
+                    h4{
+                        bottom: -50px;
+                    }
+                    a{
+                        bottom: -50px;
+                    }
+                    &:nth-of-type(3){
+                        opacity: 1;
+                        img{
+                            top: 40px;
+                            transform: scale(0.8);
+                        }
+                        h4{
+                            top: 10px;
+                            font: bold 28px/1.5 'Noto+Sans+KR';
+                        }
+                        a{
+                            bottom: -50px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        nav{
+            padding: 10px;
+        }
+    }
 }
 
 }

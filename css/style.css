@@ -448,6 +448,13 @@ main #mainCompany img {
   body #companyContent3 > .conBox article p {
     margin-bottom: 30px;
   }
+  body #brandsVisual h3 {
+    padding: 10px;
+    font: bold 30px/1.5 "Noto+Sans+KR";
+  }
+  body #brandsContent h2 {
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 400px) {
   body .bg .mobileBg {
@@ -576,6 +583,37 @@ main #mainCompany img {
   }
   body #companyContent3 > .conBox > div {
     height: 100%;
+  }
+  body #brandsContent .brandsLoop {
+    top: 20px;
+    height: 400px;
+  }
+  body #brandsContent .brandsLoop .slide li {
+    opacity: 0;
+  }
+  body #brandsContent .brandsLoop .slide li h4 {
+    bottom: -50px;
+  }
+  body #brandsContent .brandsLoop .slide li a {
+    bottom: -50px;
+  }
+  body #brandsContent .brandsLoop .slide li:nth-of-type(3) {
+    opacity: 1;
+  }
+  body #brandsContent .brandsLoop .slide li:nth-of-type(3) img {
+    top: 40px;
+    transform: scale(0.8);
+  }
+  body #brandsContent .brandsLoop .slide li:nth-of-type(3) h4 {
+    top: 10px;
+    font: bold 28px/1.5 "Noto+Sans+KR";
+  }
+  body #brandsContent .brandsLoop .slide li:nth-of-type(3) a {
+    bottom: -50px;
+    opacity: 1;
+  }
+  body #brandsContent nav {
+    padding: 10px;
   }
 }
 #companyVisual {
@@ -901,19 +939,18 @@ main #mainCompany img {
   margin: 0 auto;
   margin-top: 100px;
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 #brandsContent h2 {
   display: block;
   max-width: 1000px;
   margin: 20px auto;
   font: bold 21px/1.5 "Noto+Sans+KR";
-  padding-left: 10px;
   border-left: 8px solid orange;
 }
 #brandsContent .brandsLoop {
   width: 100vw;
-  height: 550px;
+  height: 500px;
   margin: 0 auto;
   position: relative;
 }
@@ -1004,7 +1041,9 @@ main #mainCompany img {
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  position: relative;
+  z-index: 3;
 }
 #brandsContent nav div {
   cursor: pointer;

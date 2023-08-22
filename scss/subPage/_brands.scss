@@ -21,7 +21,7 @@
     margin: 0 auto;
     margin-top: 100px;
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
    
     
     h2{
@@ -29,12 +29,11 @@
         max-width: 1000px;
         margin: 20px auto;
         font: bold 21px/1.5 'Noto+Sans+KR';
-        padding-left: 10px;
         border-left: 8px solid orange;
     }
     .brandsLoop{
         width: 100vw;
-        height: 550px;
+        height: 500px;
         margin: 0 auto;
         position: relative;
 
@@ -138,7 +137,9 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
+        position: relative;
+        z-index: 3;
         div{
             cursor: pointer;
 			width: 100px;
