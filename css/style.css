@@ -597,23 +597,36 @@ main #mainCompany img {
   body #brandsContent .brandsLoop .slide li a {
     bottom: -50px;
   }
-  body #brandsContent .brandsLoop .slide li:nth-of-type(3) {
+  body #brandsContent .brandsLoop .slide li:nth-of-type(4) {
     opacity: 1;
   }
-  body #brandsContent .brandsLoop .slide li:nth-of-type(3) img {
+  body #brandsContent .brandsLoop .slide li:nth-of-type(4) img {
     top: 40px;
     transform: scale(0.8);
   }
-  body #brandsContent .brandsLoop .slide li:nth-of-type(3) h4 {
+  body #brandsContent .brandsLoop .slide li:nth-of-type(4) h4 {
     top: 10px;
     font: bold 28px/1.5 "Noto+Sans+KR";
   }
-  body #brandsContent .brandsLoop .slide li:nth-of-type(3) a {
+  body #brandsContent .brandsLoop .slide li:nth-of-type(4) a {
     bottom: -50px;
     opacity: 1;
   }
   body #brandsContent nav {
     padding: 10px;
+  }
+  body #brandsContent .popUp {
+    width: 93vw;
+  }
+  body #brandsContent .popUp h2 {
+    font: bold 25px/1.8 "Noto+Sans+KR";
+  }
+  body #brandsContent .popUp p {
+    font: 14px/1.8 "Noto+Sans+KR";
+  }
+  body #brandsContent .popUp .close {
+    width: 70%;
+    font: 18px/1.8 "Noto+Sans+KR";
   }
 }
 #companyVisual {
@@ -1002,38 +1015,50 @@ main #mainCompany img {
   transition: opacity 0.2s;
 }
 #brandsContent .brandsLoop .slide li:nth-of-type(1) {
-  transform: translate(-250%, -50%);
+  transform: translate(-350%, -50%);
 }
 #brandsContent .brandsLoop .slide li:nth-of-type(1) img {
   transform: scale(0.8);
 }
 #brandsContent .brandsLoop .slide li:nth-of-type(2) {
-  transform: translate(-150%, -50%);
+  transform: translate(-250%, -50%);
 }
 #brandsContent .brandsLoop .slide li:nth-of-type(2) img {
   transform: scale(0.8);
 }
-#brandsContent .brandsLoop .slide li:nth-of-type(3) h4 {
+#brandsContent .brandsLoop .slide li:nth-of-type(3) {
+  transform: translate(-150%, -50%);
+}
+#brandsContent .brandsLoop .slide li:nth-of-type(3) img {
+  transform: scale(0.8);
+}
+#brandsContent .brandsLoop .slide li:nth-of-type(4) h4 {
   top: 0;
   font: bold 50px/1.5 "Noto+Sans+KR";
   color: #555;
 }
-#brandsContent .brandsLoop .slide li:nth-of-type(3) a {
+#brandsContent .brandsLoop .slide li:nth-of-type(4) a {
   opacity: 1;
 }
-#brandsContent .brandsLoop .slide li:nth-of-type(3) a:hover {
+#brandsContent .brandsLoop .slide li:nth-of-type(4) a:hover {
   opacity: 0.7;
 }
-#brandsContent .brandsLoop .slide li:nth-of-type(4) {
+#brandsContent .brandsLoop .slide li:nth-of-type(5) {
   transform: translate(50%, -50%);
 }
-#brandsContent .brandsLoop .slide li:nth-of-type(4) img {
+#brandsContent .brandsLoop .slide li:nth-of-type(5) img {
   transform: scale(0.8);
 }
-#brandsContent .brandsLoop .slide li:nth-of-type(5) {
+#brandsContent .brandsLoop .slide li:nth-of-type(6) {
   transform: translate(150%, -50%);
 }
-#brandsContent .brandsLoop .slide li:nth-of-type(5) img {
+#brandsContent .brandsLoop .slide li:nth-of-type(6) img {
+  transform: scale(0.8);
+}
+#brandsContent .brandsLoop .slide li:nth-of-type(7) {
+  transform: translate(250%, -50%);
+}
+#brandsContent .brandsLoop .slide li:nth-of-type(7) img {
   transform: scale(0.8);
 }
 #brandsContent nav {
@@ -1059,6 +1084,47 @@ main #mainCompany img {
   transition: 0.2s;
 }
 #brandsContent nav div:hover {
+  opacity: 0.7;
+}
+#brandsContent .popUp {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 40vw;
+  height: 100%;
+  background-color: rgba(187, 187, 187, 0.4);
+  backdrop-filter: blur(10px);
+  left: -100%;
+  transition: 0.5s;
+  border-right: 2px solid #bbb;
+  padding-top: 20vh;
+}
+#brandsContent .popUp h2 {
+  font: bold 30px/1.8 "Noto+Sans+KR";
+  color: #111;
+  text-align: center;
+  border: none;
+  margin: 0;
+}
+#brandsContent .popUp p {
+  font: 16px/1.8 "Noto+Sans+KR";
+  color: #444;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+#brandsContent .popUp .close {
+  cursor: pointer;
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  font: 20px/1.8 "Noto+Sans+KR";
+  color: #fff;
+  border-radius: 50px;
+  background-color: green;
+  transition: 0.25s;
+}
+#brandsContent .popUp .close:hover {
   opacity: 0.7;
 }
 

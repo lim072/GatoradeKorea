@@ -177,7 +177,7 @@
                     a{
                         bottom: -50px;
                     }
-                    &:nth-of-type(3){
+                    &:nth-of-type(4){
                         opacity: 1;
                         img{
                             top: 40px;
@@ -197,6 +197,19 @@
         }
         nav{
             padding: 10px;
+        }
+        .popUp{
+            width: 93vw;
+            h2{
+                font: bold 25px/1.8 'Noto+Sans+KR';
+            }
+            p{
+                font: 14px/1.8 'Noto+Sans+KR';
+            }
+            .close{
+                width: 70%;
+                font: 18px/1.8 'Noto+Sans+KR';
+            }
         }
     }
 }

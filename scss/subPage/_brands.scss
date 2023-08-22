@@ -90,18 +90,24 @@
             //li 각자 위치 조정
             li{
                 &:nth-of-type(1){
-                    transform: translate(-250% ,-50%);
+                    transform: translate(-350% ,-50%);
                     img{
                         transform: scale(0.8);
                     }
                 }
                 &:nth-of-type(2){
-                    transform: translate(-150% ,-50%);
+                    transform: translate(-250% ,-50%);
                     img{
                         transform: scale(0.8);
                     }
                 }
                 &:nth-of-type(3){
+                    transform: translate(-150% ,-50%);
+                    img{
+                        transform: scale(0.8);
+                    }
+                }
+                &:nth-of-type(4){
                     h4{
                         top: 0;
                         font: bold 50px/1.5 'Noto+Sans+KR';
@@ -116,19 +122,28 @@
                         
                     }
                 }
-                &:nth-of-type(4){
+                &:nth-of-type(5){
                     transform: translate(50% ,-50%);
                  
                     img{
                         transform: scale(0.8);
                     }
                 }
-                &:nth-of-type(5){
+                &:nth-of-type(6){
                     transform: translate(150% ,-50%);
+                 
                     img{
                         transform: scale(0.8);
                     }
                 }
+                &:nth-of-type(7){
+                    transform: translate(250% ,-50%);
+                 
+                    img{
+                        transform: scale(0.8);
+                    }
+                }
+            
             }
         }
     }
@@ -158,6 +173,49 @@
 				opacity: 0.7;
 			}
 		
+        }
+    }
+    .popUp{
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        width: 40vw;
+        height: 100%;
+        background-color: rgba($color: #bbb, $alpha: 0.4);
+        backdrop-filter: blur(10px);
+        left: -100%;
+        transition: 0.5s;
+        border-right: 2px solid #bbb;
+        padding-top: 20vh;
+
+        h2{
+            font: bold 30px/1.8 'Noto+Sans+KR';
+            color: #111;
+            text-align: center;
+            border: none;
+            margin: 0;
+        }
+        p{
+            font: 16px/1.8 'Noto+Sans+KR';
+            color: #444;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+        .close{
+            cursor: pointer;
+            display: block;
+            width: 30%;
+            margin: 0 auto;
+            text-align: center;
+            font: 20px/1.8 'Noto+Sans+KR';
+            color: #fff;
+            border-radius: 50px;
+            background-color: green;
+            transition: 0.25s;
+
+            &:hover{
+                opacity: 0.7;
+            }
         }
     }
 }
