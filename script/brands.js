@@ -25,7 +25,7 @@ more.forEach((el) => {
         let txt = e.currentTarget.closest('li').querySelector("h4").innerText;
         popUp.querySelector("h2").innerText = txt;
        
-        let imgSrc = e.currentTarget.closest("li").querySelector("img").src;
+        let imgSrc = e.currentTarget.closest("li").querySelector(".popUpImg").src;
         popUp.querySelector("img").src = imgSrc;
 
         let txt2 = e.currentTarget.closest('li').querySelector("p").innerText;

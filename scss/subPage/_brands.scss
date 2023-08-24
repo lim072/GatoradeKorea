@@ -69,6 +69,11 @@
                     left: -7px;
                     transition: 0.5s;
                 }
+                .popUpImg{
+                    position: absolute;
+                    top: -5000px;
+                    left: -5000px;
+                }
                 a{
                     width: 115px;
                     position: absolute;
@@ -194,6 +199,10 @@
             text-align: center;
             border: none;
             margin: 0;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
         }
         p{
             font: 16px/1.8 'Noto+Sans+KR';

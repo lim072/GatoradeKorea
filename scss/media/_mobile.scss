@@ -181,7 +181,8 @@
                         opacity: 1;
                         img{
                             top: 40px;
-                            transform: scale(0.8);
+                            
+                            transform: scale(0.7);
                         }
                         h4{
                             top: 10px;
@@ -201,14 +202,14 @@
         .popUp{
             width: 93vw;
             h2{
-                font: bold 25px/1.8 'Noto+Sans+KR';
+                font: bold 20px/1.8 'Noto+Sans+KR';
             }
             p{
-                font: 14px/1.8 'Noto+Sans+KR';
+                font: 12px/1.8 'Noto+Sans+KR';
             }
             .close{
                 width: 70%;
-                font: 18px/1.8 'Noto+Sans+KR';
+                font: 16px/1.8 'Noto+Sans+KR';
             }
         }
     }

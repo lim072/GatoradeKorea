@@ -602,7 +602,7 @@ main #mainCompany img {
   }
   body #brandsContent .brandsLoop .slide li:nth-of-type(4) img {
     top: 40px;
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
   body #brandsContent .brandsLoop .slide li:nth-of-type(4) h4 {
     top: 10px;
@@ -619,14 +619,14 @@ main #mainCompany img {
     width: 93vw;
   }
   body #brandsContent .popUp h2 {
-    font: bold 25px/1.8 "Noto+Sans+KR";
+    font: bold 20px/1.8 "Noto+Sans+KR";
   }
   body #brandsContent .popUp p {
-    font: 14px/1.8 "Noto+Sans+KR";
+    font: 12px/1.8 "Noto+Sans+KR";
   }
   body #brandsContent .popUp .close {
     width: 70%;
-    font: 18px/1.8 "Noto+Sans+KR";
+    font: 16px/1.8 "Noto+Sans+KR";
   }
 }
 #companyVisual {
@@ -999,6 +999,11 @@ main #mainCompany img {
   left: -7px;
   transition: 0.5s;
 }
+#brandsContent .brandsLoop .slide li .popUpImg {
+  position: absolute;
+  top: -5000px;
+  left: -5000px;
+}
 #brandsContent .brandsLoop .slide li a {
   width: 115px;
   position: absolute;
@@ -1105,6 +1110,10 @@ main #mainCompany img {
   text-align: center;
   border: none;
   margin: 0;
+}
+#brandsContent .popUp img {
+  display: block;
+  margin: 0 auto;
 }
 #brandsContent .popUp p {
   font: 16px/1.8 "Noto+Sans+KR";
