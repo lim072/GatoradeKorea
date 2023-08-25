@@ -230,7 +230,8 @@
 #brandsContent2{
     width: 100%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 150px;
+    overflow: hidden;
    
     h2{
         display: block;
@@ -238,5 +239,51 @@
         margin: 20px auto;
         font: bold 21px/1.5 'Noto+Sans+KR';
         border-left: 8px solid orange;
+    }
+    ul{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-top: 100px;
+        li{
+            width: 100%;
+            display: flex;
+            .boxText{
+                width: 50%;
+                height: 350px;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h4{
+                    font: bold 40px/1.5 'Noto+Sans+KR';
+                }
+                p{
+                    font: 23px/1.5 'Noto+Sans+KR';
+                    color: #777;
+                }
+                a{
+                    display: inline-block;
+                    cursor: pointer;
+                    width: 120px;
+                    height: 40px;
+                    border-radius: 18px;
+                    border: 2px solid #777;
+                    text-align: center;
+                    font: bold 16px/36px 'Noto+Sans+KR';
+                    color: #222;
+                }
+            }
+            &:nth-of-type(even){
+                width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+
+                .boxText{
+                    text-align: right;
+                    align-items: flex-end;
+                }
+            }
+        }
     }
 }
