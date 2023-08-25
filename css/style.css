@@ -317,32 +317,32 @@ main #mainCompany img {
 }
 
 @media screen and (max-width: 1400px) {
-  main #mainNow a {
+  body main #mainNow a {
     padding: 50px;
   }
-  main #mainNow img {
+  body main #mainNow img {
     width: auto;
     height: 800px;
     position: relative;
     left: -50px;
   }
-  main #mainBrand a {
+  body main #mainBrand a {
     top: 50%;
     left: 0%;
     padding: 50px;
   }
-  main #mainCompany {
+  body main #mainCompany {
     height: 800px;
     width: 100%;
     background-image: url("../images/main/GatoradeCompany.jpg");
     background-position: center left;
     background-size: auto;
   }
-  main #mainCompany img {
+  body main #mainCompany img {
     opacity: 0;
   }
-  #brandsContent h2 {
-    margin-left: 20px;
+  body #brandsContent h2 {
+    margin: 20px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -454,6 +454,12 @@ main #mainCompany img {
   body #brandsVisual h3 {
     padding: 10px;
     font: bold 30px/1.5 "Noto+Sans+KR";
+  }
+  body #brandsContent .popUp {
+    width: 70vw;
+  }
+  body #brandsContent .popUp img {
+    width: 90%;
   }
 }
 @media screen and (max-width: 400px) {
@@ -611,9 +617,6 @@ main #mainCompany img {
   body #brandsContent .brandsLoop .slide li:nth-of-type(4) a {
     bottom: -50px;
     opacity: 1;
-  }
-  body #brandsContent nav {
-    padding: 10px;
   }
   body #brandsContent .popUp {
     width: 93vw;
@@ -952,7 +955,7 @@ main #mainCompany img {
   margin: 0 auto;
   margin-top: 100px;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 #brandsContent h2 {
   display: block;
@@ -996,7 +999,6 @@ main #mainCompany img {
 #brandsContent .brandsLoop .slide li img {
   position: relative;
   top: 100px;
-  left: -7px;
   transition: 0.5s;
 }
 #brandsContent .brandsLoop .slide li .popUpImg {
@@ -1015,8 +1017,7 @@ main #mainCompany img {
   background-color: green;
   border-radius: 20px;
   color: #fff;
-  left: 48%;
-  transform: translateX(-50%);
+  left: 115px;
   transition: opacity 0.2s;
 }
 #brandsContent .brandsLoop .slide li:nth-of-type(1) {
@@ -1071,14 +1072,14 @@ main #mainCompany img {
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
   position: relative;
   z-index: 3;
 }
 #brandsContent nav div {
   cursor: pointer;
-  width: 100px;
-  height: 36px;
+  width: 90px;
+  height: 35px;
   border-radius: 18px;
   background-color: yellowgreen;
   display: flex;
@@ -1112,7 +1113,6 @@ main #mainCompany img {
   margin: 0;
 }
 #brandsContent .popUp img {
-  width: 90%;
   display: block;
   margin: 0 auto;
 }

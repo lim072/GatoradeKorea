@@ -21,7 +21,7 @@
     margin: 0 auto;
     margin-top: 100px;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
    
     
     h2{
@@ -66,7 +66,7 @@
                 img{
                     position: relative;
                     top: 100px;
-                    left: -7px;
+                    
                     transition: 0.5s;
                 }
                 .popUpImg{
@@ -85,8 +85,7 @@
                     background-color: green;
                     border-radius: 20px;
                     color: #fff;
-                    left: 48%;
-                    transform: translateX(-50%);
+                    left: 115px;
                     transition: opacity 0.2s;
                 
                 }
@@ -157,13 +156,13 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 50px;
         position: relative;
         z-index: 3;
         div{
             cursor: pointer;
-			width: 100px;
-			height: 36px;
+			width: 90px;
+			height: 35px;
 			border-radius: 18px;
 			background-color: yellowgreen;
 			display: flex;
@@ -201,7 +200,6 @@
             margin: 0;
         }
         img{
-            width: 90%;
             display: block;
             margin: 0 auto;
         }
