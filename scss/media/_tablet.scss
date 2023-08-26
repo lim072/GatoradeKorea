@@ -151,6 +151,35 @@
             }
             
         }
+        #brandsContent2{
+           
+            ul{
+                li{
+                    height: 250px;
+                    .boxText{  
+                        height: 250px;
+                        padding: 20px;
+                        h4{
+                            width: 200%;
+                            font: bold 30px/1.5 'Noto+Sans+KR';
+                        }
+                        p{
+                            font: 16px/1.5 'Noto+Sans+KR';
+                        }
+                        a{
+                            height: 30px;
+                            font: bold 12px/26px 'Noto+Sans+KR';
+                        }
+                      
+                    }
+                    img{
+                        height: 150px;
+                        position: relative;
+                        top: 100px;
+                    }
+                }
+            }
+        }
      
     }
 }

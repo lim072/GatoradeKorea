@@ -246,8 +246,12 @@
         padding-top: 100px;
         li{
             width: 100%;
+            height: 350px;
             display: flex;
+            transition: 0.5s;
             .boxText{
+                position: relative;
+                z-index: 50;
                 width: 50%;
                 height: 350px;
                 padding: 50px;
@@ -260,7 +264,7 @@
                 }
                 p{
                     font: 23px/1.5 'Noto+Sans+KR';
-                    color: #777;
+                    color: #555;
                 }
                 a{
                     display: inline-block;
@@ -275,13 +279,103 @@
                 }
             }
             &:nth-of-type(even){
+                position: relative;
                 width: 100%;
                 display: flex;
                 flex-direction: row-reverse;
+                background-color: #eee;
 
                 .boxText{
                     text-align: right;
                     align-items: flex-end;
+                }
+
+            &::before{
+                position: absolute;
+                content: '';
+                display: block;
+                width: 100%;
+                background-color: #eee;
+                height: 350px;
+                left: -100%;
+                transition: 0.5s;
+                }
+            }
+            &:nth-of-type(odd){
+                position: relative;
+              
+                &::before{
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 100vw;
+                    height: 350px;
+                    left: 100%;
+                    transition: 0.5s;
+                }
+            }
+            &:nth-of-type(1){
+                &:hover{
+                    background-color: lightpink;
+                    &::before{
+                        background-color: lightpink;
+                    }
+                }
+            }
+            &:nth-of-type(2){
+                &:hover{
+                    background-color: rgb(247, 47, 47);
+                    &::before{
+                        background-color: rgb(247, 47, 47);
+                    }
+                }
+            }
+            &:nth-of-type(3){
+                &:hover{
+                    background-color: rgb(233, 233, 71);
+                    &::before{
+                        background-color: rgb(233, 233, 71);
+                    }
+                }
+            }
+            &:nth-of-type(4){
+                &:hover{
+                    background-color: lightgreen;
+                    &::before{
+                        background-color:lightgreen;
+                    }
+                }
+            }
+            &:nth-of-type(5){
+                &:hover{
+                    background-color: rgb(64, 175, 219);
+                    &::before{
+                        background-color:rgb(64, 175, 219);
+                    }
+                }
+            }
+            &:nth-of-type(6){
+                &:hover{
+                    background-color: rgba(0, 0, 139, 0.863);
+                    &::before{
+                        background-color:rgba(0, 0, 139, 0.863);
+                    }
+                }
+            }
+            &:nth-of-type(7){
+                &:hover{
+                    background-color: burlywood;
+                    &::before{
+                        background-color:burlywood;
+                    }
+                }
+            }
+            &:nth-of-type(8){
+                &:hover{
+                    background-color: brown;
+                    &::before{
+                        background-color:brown;
+                    }
                 }
             }
         }

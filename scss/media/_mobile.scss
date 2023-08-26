@@ -180,9 +180,11 @@
                     &:nth-of-type(4){
                         opacity: 1;
                         img{
-                            top: 40px;
-                            
-                            transform: scale(0.7);
+                            &:nth-of-type(1){
+                                top: 40px;
+                                left: 0;
+                                transform: scale(0.7);
+                            }
                         }
                         h4{
                             top: 10px;
@@ -209,6 +211,30 @@
                 width: 70%;
                 font: 16px/1.8 'Noto+Sans+KR';
             }
+        }
+    }
+    ul{
+        li{
+            .boxText{
+                p{
+                    width: 120%;
+                }
+            }
+           &:nth-of-type(7){
+                >img{
+                    left: -100px;
+                }
+           }
+           &:nth-of-type(7){
+            >img{
+                left: -100px;
+            }
+        }
+        &:nth-of-type(even){
+            >img{
+                left: 50px;
+            }
+        }
         }
     }
 }
