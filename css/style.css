@@ -664,11 +664,11 @@ main #mainCompany img {
   body ul li:nth-of-type(7) > img {
     left: -100px;
   }
-  body ul li:nth-of-type(7) > img {
-    left: -100px;
-  }
   body ul li:nth-of-type(even) > img {
     left: 50px;
+  }
+  body ul li:nth-of-type(4) > img {
+    left: 0px;
   }
 }
 #companyVisual {
@@ -1193,7 +1193,7 @@ main #mainCompany img {
 #brandsContent2 ul {
   max-width: 1000px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 #brandsContent2 ul li {
   width: 100%;
