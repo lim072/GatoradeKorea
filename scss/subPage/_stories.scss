@@ -16,3 +16,22 @@
         text-shadow: 5px 5px 10px #000;       
     }
 }
+#storiesVisualText{
+    .inner{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        p{
+            padding: 20px;
+            font: bold 19px/1.7 'Noto+Sans+KR';
+            margin: 0 auto;
+            max-width: 1000px;
+            text-align: center;
+            color: #444;
+        }
+    }
+}
+
+#storiesContent{
+    width: 100%;
+}
