@@ -295,7 +295,6 @@
                 content: '';
                 display: block;
                 width: 100%;
-                background-color: #eee;
                 height: 350px;
                 left: -100%;
                 transition: 0.5s;
@@ -332,17 +331,17 @@
             }
             &:nth-of-type(3){
                 &:hover{
-                    background-color: rgb(233, 233, 71);
+                    background-color: rgb(241, 241, 146);
                     &::before{
-                        background-color: rgb(233, 233, 71);
+                        background-color: rgb(241, 241, 146);
                     }
                 }
             }
             &:nth-of-type(4){
                 &:hover{
-                    background-color: lightgreen;
+                    background-color: rgb(115, 212, 115);
                     &::before{
-                        background-color:lightgreen;
+                        background-color:rgb(115, 212, 115);
                     }
                 }
             }

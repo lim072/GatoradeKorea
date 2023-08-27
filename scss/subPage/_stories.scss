@@ -20,7 +20,7 @@
     .inner{
         max-width: 1000px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 50px;
         p{
             padding: 20px;
             font: bold 19px/1.7 'Noto+Sans+KR';
@@ -33,5 +33,21 @@
 }
 
 #storiesContent{
-    width: 100%;
+    width: 100vw;
+
+    article{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        .storiesConPic{
+            width: 50%;
+            overflow: hidden;
+            background-image: url(../images/stories/gatoradeStoriesContent1.jpg);
+            background-position: center bottom;
+        }
+        .storiesConText{
+            width: 50%;
+            padding: 50px;
+        }
+    }
 }
