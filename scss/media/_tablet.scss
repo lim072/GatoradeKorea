@@ -69,9 +69,11 @@
             }
             .inner{
                 .con1{
+                    padding: 0;
                     .conBox{
                         flex-direction: column;
-                        
+                
+                       
                         >div{
                             width: 100%;
                             p{
@@ -91,8 +93,8 @@
             margin-bottom: 50px;
             >.conBox{
               flex-direction: column-reverse;
-        
-                >div{
+                padding: 0;
+                >div{   
                     width: 100%;
                     img{
                         width: 100%;
@@ -116,7 +118,7 @@
             margin-bottom: 50px;
             >.conBox{
               flex-direction: column-reverse;
-        
+              padding: 0;
                 >div{
                     width: 100%;
                     img{
@@ -176,6 +178,45 @@
                         height: 150px;
                         position: relative;
                         top: 100px;
+                    }
+                }
+            }
+        }
+        #storiesContent{ 
+            article{
+                height: 570px;
+                flex-direction: column-reverse;
+                margin: 20px 0;
+        
+                .storiesConPic{
+                    width: 100%;
+                    height: 300px;
+                    background-size: cover;
+                }
+                .storiesConText{
+                    width: 100%;
+                    height: 270px;
+                    padding: 0px;
+                    margin-bottom: 10px;
+        
+                    >.inner{
+                        max-width: 100%;
+                        p{
+                            font: 13px/1.5 'Noto+Sans+KR';
+                        }
+                     
+                    }
+                }
+                &:nth-of-type(even){
+                    flex-direction: column-reverse;
+                    .storiesConText{
+                        width: 100%;
+                        padding: 0px;
+                    }
+                }
+                &:nth-of-type(4){
+                    .storiesConPic{
+                        background-position: center;
                     }
                 }
             }

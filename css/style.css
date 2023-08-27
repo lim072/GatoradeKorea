@@ -38,7 +38,7 @@ body .bg .mobileBg {
 }
 body .bg .backLogo {
   position: absolute;
-  top: 70%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.9;
@@ -394,6 +394,9 @@ main #mainCompany img {
   body #companyContent > p {
     font: bold 18px/1.7 "Noto+Sans+KR";
   }
+  body #companyContent .inner .con1 {
+    padding: 0;
+  }
   body #companyContent .inner .con1 .conBox {
     flex-direction: column;
   }
@@ -413,6 +416,7 @@ main #mainCompany img {
   }
   body #companyContent2 > .conBox {
     flex-direction: column-reverse;
+    padding: 0;
   }
   body #companyContent2 > .conBox > div {
     width: 100%;
@@ -436,6 +440,7 @@ main #mainCompany img {
   }
   body #companyContent3 > .conBox {
     flex-direction: column-reverse;
+    padding: 0;
   }
   body #companyContent3 > .conBox > div {
     width: 100%;
@@ -486,6 +491,38 @@ main #mainCompany img {
     height: 150px;
     position: relative;
     top: 100px;
+  }
+  body #storiesContent article {
+    height: 570px;
+    flex-direction: column-reverse;
+    margin: 20px 0;
+  }
+  body #storiesContent article .storiesConPic {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+  body #storiesContent article .storiesConText {
+    width: 100%;
+    height: 270px;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  body #storiesContent article .storiesConText > .inner {
+    max-width: 100%;
+  }
+  body #storiesContent article .storiesConText > .inner p {
+    font: 13px/1.5 "Noto+Sans+KR";
+  }
+  body #storiesContent article:nth-of-type(even) {
+    flex-direction: column-reverse;
+  }
+  body #storiesContent article:nth-of-type(even) .storiesConText {
+    width: 100%;
+    padding: 0px;
+  }
+  body #storiesContent article:nth-of-type(4) .storiesConPic {
+    background-position: center;
   }
 }
 @media screen and (max-width: 400px) {
@@ -591,13 +628,15 @@ main #mainCompany img {
     padding: 100px 20px 20px 20px;
   }
   body #companyVisual,
-  body #brandsVisual {
+  body #brandsVisual,
+  body #storiesVisual {
     height: 200px;
     position: relative;
     top: 70px;
   }
   body #companyVisual h3,
-  body #brandsVisual h3 {
+  body #brandsVisual h3,
+  body #storiesVisual h3 {
     font: bold 20px/1.5 "Noto+Sans+KR";
   }
   body #companyContent {
@@ -814,7 +853,7 @@ main #mainCompany img {
 }
 #companyContent2 > .conBox article p {
   width: 90%;
-  font: 15px/1.2 "Noto+Sans+KR";
+  font: 15px/1.5 "Noto+Sans+KR";
 }
 #companyContent2 > .conBox article p a {
   display: block;
@@ -906,7 +945,7 @@ main #mainCompany img {
 }
 #companyContent3 > .conBox article p {
   width: 90%;
-  font: 15px/1.2 "Noto+Sans+KR";
+  font: 15px/1.5 "Noto+Sans+KR";
 }
 #companyContent3 > .conBox article p a {
   display: block;
@@ -1321,6 +1360,7 @@ main #mainCompany img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 #storiesVisual h3 {
   font: bold 50px/1.5 "Noto+Sans+KR";
@@ -1330,10 +1370,12 @@ main #mainCompany img {
   text-shadow: 5px 5px 10px #000;
 }
 
+#storiesVisualText {
+  padding: 20px;
+}
 #storiesVisualText .inner {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 50px;
 }
 #storiesVisualText .inner p {
   padding: 20px;
@@ -1351,16 +1393,109 @@ main #mainCompany img {
   width: 100%;
   height: 400px;
   display: flex;
+  margin: 50px 0;
 }
 #storiesContent article .storiesConPic {
   width: 50%;
   overflow: hidden;
   background-image: url(../images/stories/gatoradeStoriesContent1.jpg);
-  background-position: center bottom;
+  background-position: center;
 }
 #storiesContent article .storiesConText {
   width: 50%;
   padding: 50px;
+}
+#storiesContent article .storiesConText > .inner {
+  max-width: 500px;
+  padding: 50px;
+}
+#storiesContent article .storiesConText > .inner h3 {
+  font: bold 20px/1.1 "Noto+Sans+KR";
+}
+#storiesContent article .storiesConText > .inner p {
+  width: 90%;
+  font: 15px/1.5 "Noto+Sans+KR";
+}
+#storiesContent article .storiesConText > .inner p::before {
+  content: "";
+  display: block;
+  background-image: url(../../images/getoradeTexteffect.png);
+  width: 15px;
+  height: 40px;
+  background-size: cover;
+  position: relative;
+  top: 40px;
+  left: -25px;
+}
+#storiesContent article .storiesConText > .inner a {
+  display: block;
+}
+#storiesContent article .storiesConText > .inner a button {
+  border: none;
+  outline: none;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  color: #fff;
+  font: bold 15px/25px "Noto+Sans+KR";
+  cursor: pointer;
+}
+#storiesContent article .storiesConText > .inner a span {
+  margin-left: 10px;
+  transition: 0.3s;
+  position: relative;
+  top: 3px;
+  z-index: 2;
+}
+#storiesContent article .storiesConText > .inner a span::before {
+  display: block;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  background-color: #fff;
+  top: -4.5px;
+  left: -30px;
+  clip-path: polygon(25% 51%, 44% 45%, 13% 93%, 100% 23%, 69% 28%, 94% 3%, 41% 25%);
+  z-index: 1;
+  transition: 0.1s;
+}
+#storiesContent article .storiesConText > .inner a span i {
+  font-size: 22px;
+  color: yellowgreen;
+}
+#storiesContent article .storiesConText > .inner a:hover span {
+  margin-left: 30px;
+}
+#storiesContent article .storiesConText > .inner a:hover span i {
+  color: yellowgreen;
+}
+#storiesContent article .storiesConText > .inner a:hover span::before {
+  opacity: 1;
+  background-color: orange;
+}
+#storiesContent article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+#storiesContent article:nth-of-type(even) .storiesConText {
+  width: 50%;
+  padding: 50px;
+}
+#storiesContent article:nth-of-type(even) .storiesConText > .inner {
+  float: right;
+}
+#storiesContent article:nth-of-type(2) .storiesConPic {
+  background-image: url(../images/stories/gatoradeStoriesContent2.jpg);
+}
+#storiesContent article:nth-of-type(3) .storiesConPic {
+  background-image: url(../images/stories/gatoradeStoriesContent3.jpg);
+}
+#storiesContent article:nth-of-type(4) .storiesConPic {
+  background-image: url(../images/stories/gatoradeStoriesContent4.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */
