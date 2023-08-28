@@ -1,0 +1,22 @@
+#nowContent{
+    article{
+        .nowConPic{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        // .nowConText{
+
+        // }
+        &:nth-of-type(1){
+            .nowConPic{
+                background-color: #ddd;
+                img{
+                    width: 50%;
+                }
+            }
+        }
+    }
+ 
+}
