@@ -1,8 +1,11 @@
 #nowContent{
+    overflow: hidden;
     >article{
         position: relative;
+        overflow: hidden;
         .nowConPic{
             font-size: 0;
+            overflow: hidden;
             img{
                 width: 100%;
                 min-width: 400px;

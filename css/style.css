@@ -1583,11 +1583,16 @@ main #mainCompany img {
   background-image: url(../images/stories/gatoradeStoriesContent4.jpg);
 }
 
+#nowContent {
+  overflow: hidden;
+}
 #nowContent > article {
   position: relative;
+  overflow: hidden;
 }
 #nowContent > article .nowConPic {
   font-size: 0;
+  overflow: hidden;
 }
 #nowContent > article .nowConPic img {
   width: 100%;
