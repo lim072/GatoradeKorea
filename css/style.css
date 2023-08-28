@@ -1584,7 +1584,7 @@ main #mainCompany img {
 }
 
 #nowContent {
-  overflow: g;
+  overflow: hidden;
 }
 #nowContent > article {
   position: relative;
