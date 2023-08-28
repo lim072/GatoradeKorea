@@ -214,6 +214,7 @@
             }
         }
     }
+    #brandsContent2{
     ul{
         li{
             .boxText{
@@ -239,6 +240,12 @@
         }
         }
     }
-}
+    }
+    #nowContent{
+        position: relative;
+        top: 70px;
+        margin-bottom: 70px;
+    }
+    }
 
 }

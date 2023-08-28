@@ -1,22 +1,292 @@
 #nowContent{
     article{
+        position: relative;
         .nowConPic{
-            width: 100%;
+            font-size: 0;
             img{
                 width: 100%;
+                min-width: 400px;
+                
             }
         }
-        // .nowConText{
+        .nowConText{
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            width: 50%;
+            z-index: 20;
+            padding: 20px;
+            
+            .inner{
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h3{
+                    font: bold 32px/1.1 'Noto+Sans+KR';
+                    text-shadow: 5px 5px 5px #888;
+                }
+                p{
+                    width: 70%;
+                    font: 18px/1.5 'Noto+Sans+KR';
+                    color: #555;
+                    text-shadow: 5px 5px 5px #888;
+                }
+                a{
+                    display: block;
+                    button{
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                    display: inline-block;
+                    width: 100px;
+                    height: 30px;
+                    border-radius: 10px;
+                    background-color: yellowgreen;
+                    color: #fff;
+                    font: bold 15px/25px 'Noto+Sans+KR';
+                    cursor: pointer;
+                    box-shadow: 2px 2px 5px #555;
+                    }
+                    span{
+                        margin-left: 10px;
+                        transition: 0.3s;
+                        position: relative;
+                        top: 3px;
+                        z-index: 2;
+                        
+                        &::before{
+                            display: block;
+                            opacity: 0;
+                            content: "";
+                            position: absolute;
+                            width: 30px;
+                            height: 25px;
+                            background-color: #fff;
+                            top: -4.5px;
+                            left: -30px;
+                            clip-path: polygon(25% 51%, 44% 45%, 13% 93%, 100% 23%, 69% 28%, 94% 3%, 41% 25%);
+                            z-index: 1;
+                            transition: 0.1s;
+                        }
+                        i{
+                            font-size: 25px;
+                            color: yellowgreen; 
+                            text-shadow: 5px 5px 5px #888;
+                        }
+                    }
+                    &:hover{
+                    
+                        span{
+                            margin-left: 30px;
+                            i{
+                                color: yellowgreen;
+                            }
+                            &::before{
+                                opacity: 1;
+                                background-color: orange;
+                            }
+                        }
+                    }                        
+                }
 
-        // }
+            }
+        }
         &:nth-of-type(1){
-            .nowConPic{
-                background-color: #eee;
-                img{
-                    max-height: 900px;
+            .nowConText{
+                top: 40%;
+                right: 0px;
+                width: 30%;
+                .inner{
+                    height: 150px;
+                    h3{
+                        font: bold 28px/1.2 'Noto+Sans+KR';
+                        color: #fff;
+                        text-shadow: none;
+                    }
+                    p{
+                        width: 100%;
+                        font: bold 21px/1.2 'Noto+Sans+KR';
+                        color: #fff;
+                        text-shadow: none;
+                    }
+                    a{
+                        box-shadow: none;
+                        button{
+                        background-color: orange;
+                        }
+                        span{
+                            &::before{
+                                background-color: #fff;                             
+                            }
+                            i{
+                                color: orange; 
+                                text-shadow: none;
+                            }
+                        }
+                        &:hover{
+                            span{
+                                i{
+                                    color: orange;
+                                }
+                                &::before{
+                                    background-color: #fff;
+                                }
+                            }
+                        }                        
+                    }
+    
                 }
             }
         }
+        &:nth-of-type(3){
+            .nowConText{
+                left: 50px;
+                .inner{
+                    height: 150px;
+                    h3{
+                        font: bold 32px/1.5 'Noto+Sans+KR';
+                        color: #fff;
+                    }
+                    a{
+                        button{
+                        background-color: orange;
+                        }
+                        span{
+                            &::before{
+                                background-color: #fff;                             
+                            }
+                            i{
+                                color: orange; 
+                            }
+                        }
+                        &:hover{
+                            span{
+                                i{
+                                    color: orange;
+                                }
+                                &::before{
+                                    background-color: #fff;
+                                }
+                            }
+                        }                        
+                    }
+    
+                }
+            }
+        }
+        &:nth-of-type(5){
+            .nowConText{
+                .inner{
+                    height: 250px;
+                    h3{
+                        font: bold 32px/1.5 'Noto+Sans+KR';
+                        color: #fff;
+                        text-shadow: 5px 5px 5px #000;
+                    }
+                    a{
+                        button{
+                            background-color: yellowgreen;
+                        }
+                        span{
+                            &::before{
+                                background-color: orange;                             
+                            }
+                            i{
+                               color: yellowgreen;
+                            }
+                        }
+                        &:hover{
+                            span{
+                                i{
+                                    color: yellowgreen;
+                                }
+                                &::before{
+                                    background-color: orange;
+                                }
+                            }
+                        }                        
+                    }
+    
+                }
+            }
+        }
+        &:nth-of-type(4),
+        &:nth-of-type(6){
+            .nowConText{
+                left: 50px;
+                .inner{
+                    height: 150px;
+                    h3{
+                        font: bold 32px/1.5 'Noto+Sans+KR';
+                        color: #fff;
+                        text-shadow: 5px 5px 5px #000;
+                    }
+                    a{
+                        button{
+                        background-color: orange;
+                        }
+                        span{
+                            &::before{
+                                background-color: #fff;                             
+                            }
+                            i{
+                                color: orange; 
+                            }
+                        }
+                        &:hover{
+                            span{
+                                i{
+                                    color: orange;
+                                }
+                                &::before{
+                                    background-color: #fff;
+                                }
+                            }
+                        }                        
+                    }
+    
+                }
+            }
+        }
+        &:nth-of-type(7){
+            .nowConText{
+                top: 0;
+                left: 50px;
+                .inner{
+                    height: 150px;
+                    h3{
+                        font: bold 32px/1.5 'Noto+Sans+KR';
+                        color: #fff;
+                        text-shadow: 5px 5px 5px #000;
+                    }
+                    a{
+                        button{
+                            background-color: yellowgreen;
+                        }
+                        span{
+                            &::before{
+                                background-color: orange;                             
+                            }
+                            i{
+                               color: yellowgreen;
+                            }
+                        }
+                        &:hover{
+                            span{
+                                i{
+                                    color: yellowgreen;
+                                }
+                                &::before{
+                                    background-color: orange;
+                                }
+                            }
+                        }                        
+                    }
+    
+                }
+            }
+        }
+       
     }
- 
 }
