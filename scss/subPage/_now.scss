@@ -1,5 +1,5 @@
 #nowContent{
-    article{
+    >article{
         position: relative;
         .nowConPic{
             font-size: 0;
@@ -17,7 +17,7 @@
             z-index: 20;
             padding: 20px;
             
-            .inner{
+            >.inner{
                 height: 250px;
                 display: flex;
                 flex-direction: column;
@@ -97,7 +97,7 @@
                 top: 40%;
                 right: 0px;
                 width: 30%;
-                .inner{
+                >.inner{
                     height: 150px;
                     h3{
                         font: bold 28px/1.2 'Noto+Sans+KR';
@@ -142,7 +142,7 @@
         &:nth-of-type(3){
             .nowConText{
                 left: 50px;
-                .inner{
+                >.inner{
                     height: 150px;
                     h3{
                         font: bold 32px/1.5 'Noto+Sans+KR';
@@ -177,7 +177,7 @@
         }
         &:nth-of-type(5){
             .nowConText{
-                .inner{
+                >.inner{
                     height: 250px;
                     h3{
                         font: bold 32px/1.5 'Noto+Sans+KR';
@@ -215,7 +215,7 @@
         &:nth-of-type(6){
             .nowConText{
                 left: 50px;
-                .inner{
+                >.inner{
                     height: 150px;
                     h3{
                         font: bold 32px/1.5 'Noto+Sans+KR';
@@ -253,7 +253,7 @@
             .nowConText{
                 top: 0;
                 left: 50px;
-                .inner{
+                >.inner{
                     height: 150px;
                     h3{
                         font: bold 32px/1.5 'Noto+Sans+KR';

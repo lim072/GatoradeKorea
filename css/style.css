@@ -44,7 +44,7 @@ body .bg .backLogo {
   opacity: 0.9;
 }
 body header {
-  width: 100%;
+  width: 100vw;
   height: 150px;
   background-color: #000;
   border-bottom: 1px solid #aaa;
@@ -524,84 +524,84 @@ main #mainCompany img {
   body #storiesContent article:nth-of-type(4) .storiesConPic {
     background-position: center;
   }
-  body #nowContent article .nowConPic {
+  body #nowContent > article .nowConPic {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  body #nowContent article .nowConText .inner a button {
+  body #nowContent > article .nowConText > .inner a button {
     width: 70px;
     height: 20px;
     font: bold 12px/20px "Noto+Sans+KR";
   }
-  body #nowContent article .nowConText .inner a span i {
+  body #nowContent > article .nowConText > .inner a span i {
     font-size: 20px;
   }
-  body #nowContent article:nth-of-type(1) .nowConText {
+  body #nowContent > article:nth-of-type(1) .nowConText {
     height: 100px;
     top: 0;
     width: 40%;
   }
-  body #nowContent article:nth-of-type(1) .nowConText .inner h3 {
+  body #nowContent > article:nth-of-type(1) .nowConText > .inner h3 {
     font: bold 16px/1 "Noto+Sans+KR";
   }
-  body #nowContent article:nth-of-type(1) .nowConText .inner p {
+  body #nowContent > article:nth-of-type(1) .nowConText > .inner p {
     font: bold 14px/1 "Noto+Sans+KR";
   }
-  body #nowContent article:nth-of-type(3) .nowConText {
+  body #nowContent > article:nth-of-type(3) .nowConText {
     top: 0;
     left: 50%;
   }
-  body #nowContent article:nth-of-type(3) .nowConText .inner {
+  body #nowContent > article:nth-of-type(3) .nowConText > .inner {
     height: 50px;
   }
-  body #nowContent article:nth-of-type(3) .nowConText .inner h3 {
+  body #nowContent > article:nth-of-type(3) .nowConText > .inner h3 {
     font: bold 16px/1.5 "Noto+Sans+KR";
   }
-  body #nowContent article:nth-of-type(5) .nowConPic {
+  body #nowContent > article:nth-of-type(5) .nowConPic {
     display: flex;
     align-items: center;
     justify-content: left;
   }
-  body #nowContent article:nth-of-type(5) .nowConText {
+  body #nowContent > article:nth-of-type(5) .nowConText {
     top: 0;
     width: 100%;
   }
-  body #nowContent article:nth-of-type(5) .nowConText .inner {
+  body #nowContent > article:nth-of-type(5) .nowConText > .inner {
     position: relative;
     top: 0;
     left: 50%;
     height: 50px;
     width: 55%;
   }
-  body #nowContent article:nth-of-type(5) .nowConText .inner h3 {
+  body #nowContent > article:nth-of-type(5) .nowConText > .inner h3 {
     font: bold 15px/1.2 "Noto+Sans+KR";
   }
-  body #nowContent article:nth-of-type(5) .nowConText .inner p {
+  body #nowContent > article:nth-of-type(5) .nowConText > .inner p {
     width: 100%;
     font: 12px/1 "Noto+Sans+KR";
   }
-  body #nowContent article:nth-of-type(4) .nowConText, body #nowContent article:nth-of-type(6) .nowConText {
+  body #nowContent > article:nth-of-type(4) .nowConText, body #nowContent > article:nth-of-type(6) .nowConText {
     width: 100%;
     top: 0;
     left: 0px;
   }
-  body #nowContent article:nth-of-type(4) .nowConText .inner, body #nowContent article:nth-of-type(6) .nowConText .inner {
+  body #nowContent > article:nth-of-type(4) .nowConText > .inner, body #nowContent > article:nth-of-type(6) .nowConText > .inner {
     height: 50px;
   }
-  body #nowContent article:nth-of-type(4) .nowConText .inner h3, body #nowContent article:nth-of-type(6) .nowConText .inner h3 {
+  body #nowContent > article:nth-of-type(4) .nowConText > .inner h3, body #nowContent > article:nth-of-type(6) .nowConText > .inner h3 {
     font: bold 16px/1.5 "Noto+Sans+KR";
   }
-  body #nowContent article:nth-of-type(7) .nowConText {
+  body #nowContent > article:nth-of-type(7) .nowConText {
     width: 100%;
     top: 0;
     left: 0px;
   }
-  body #nowContent article:nth-of-type(7) .nowConText .inner {
+  body #nowContent > article:nth-of-type(7) .nowConText > .inner {
     width: 100%;
     height: 50px;
   }
-  body #nowContent article:nth-of-type(7) .nowConText .inner h3 {
+  body #nowContent > article:nth-of-type(7) .nowConText > .inner h3 {
     font: bold 16px/1.5 "Noto+Sans+KR";
   }
 }
@@ -1583,17 +1583,17 @@ main #mainCompany img {
   background-image: url(../images/stories/gatoradeStoriesContent4.jpg);
 }
 
-#nowContent article {
+#nowContent > article {
   position: relative;
 }
-#nowContent article .nowConPic {
+#nowContent > article .nowConPic {
   font-size: 0;
 }
-#nowContent article .nowConPic img {
+#nowContent > article .nowConPic img {
   width: 100%;
   min-width: 400px;
 }
-#nowContent article .nowConText {
+#nowContent > article .nowConText {
   position: absolute;
   top: 100px;
   right: 50px;
@@ -1601,26 +1601,26 @@ main #mainCompany img {
   z-index: 20;
   padding: 20px;
 }
-#nowContent article .nowConText .inner {
+#nowContent > article .nowConText > .inner {
   height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#nowContent article .nowConText .inner h3 {
+#nowContent > article .nowConText > .inner h3 {
   font: bold 32px/1.1 "Noto+Sans+KR";
   text-shadow: 5px 5px 5px #888;
 }
-#nowContent article .nowConText .inner p {
+#nowContent > article .nowConText > .inner p {
   width: 70%;
   font: 18px/1.5 "Noto+Sans+KR";
   color: #555;
   text-shadow: 5px 5px 5px #888;
 }
-#nowContent article .nowConText .inner a {
+#nowContent > article .nowConText > .inner a {
   display: block;
 }
-#nowContent article .nowConText .inner a button {
+#nowContent > article .nowConText > .inner a button {
   border: none;
   outline: none;
   text-align: center;
@@ -1634,14 +1634,14 @@ main #mainCompany img {
   cursor: pointer;
   box-shadow: 2px 2px 5px #555;
 }
-#nowContent article .nowConText .inner a span {
+#nowContent > article .nowConText > .inner a span {
   margin-left: 10px;
   transition: 0.3s;
   position: relative;
   top: 3px;
   z-index: 2;
 }
-#nowContent article .nowConText .inner a span::before {
+#nowContent > article .nowConText > .inner a span::before {
   display: block;
   opacity: 0;
   content: "";
@@ -1655,158 +1655,158 @@ main #mainCompany img {
   z-index: 1;
   transition: 0.1s;
 }
-#nowContent article .nowConText .inner a span i {
+#nowContent > article .nowConText > .inner a span i {
   font-size: 25px;
   color: yellowgreen;
   text-shadow: 5px 5px 5px #888;
 }
-#nowContent article .nowConText .inner a:hover span {
+#nowContent > article .nowConText > .inner a:hover span {
   margin-left: 30px;
 }
-#nowContent article .nowConText .inner a:hover span i {
+#nowContent > article .nowConText > .inner a:hover span i {
   color: yellowgreen;
 }
-#nowContent article .nowConText .inner a:hover span::before {
+#nowContent > article .nowConText > .inner a:hover span::before {
   opacity: 1;
   background-color: orange;
 }
-#nowContent article:nth-of-type(1) .nowConText {
+#nowContent > article:nth-of-type(1) .nowConText {
   top: 40%;
   right: 0px;
   width: 30%;
 }
-#nowContent article:nth-of-type(1) .nowConText .inner {
+#nowContent > article:nth-of-type(1) .nowConText > .inner {
   height: 150px;
 }
-#nowContent article:nth-of-type(1) .nowConText .inner h3 {
+#nowContent > article:nth-of-type(1) .nowConText > .inner h3 {
   font: bold 28px/1.2 "Noto+Sans+KR";
   color: #fff;
   text-shadow: none;
 }
-#nowContent article:nth-of-type(1) .nowConText .inner p {
+#nowContent > article:nth-of-type(1) .nowConText > .inner p {
   width: 100%;
   font: bold 21px/1.2 "Noto+Sans+KR";
   color: #fff;
   text-shadow: none;
 }
-#nowContent article:nth-of-type(1) .nowConText .inner a {
+#nowContent > article:nth-of-type(1) .nowConText > .inner a {
   box-shadow: none;
 }
-#nowContent article:nth-of-type(1) .nowConText .inner a button {
+#nowContent > article:nth-of-type(1) .nowConText > .inner a button {
   background-color: orange;
 }
-#nowContent article:nth-of-type(1) .nowConText .inner a span::before {
+#nowContent > article:nth-of-type(1) .nowConText > .inner a span::before {
   background-color: #fff;
 }
-#nowContent article:nth-of-type(1) .nowConText .inner a span i {
+#nowContent > article:nth-of-type(1) .nowConText > .inner a span i {
   color: orange;
   text-shadow: none;
 }
-#nowContent article:nth-of-type(1) .nowConText .inner a:hover span i {
+#nowContent > article:nth-of-type(1) .nowConText > .inner a:hover span i {
   color: orange;
 }
-#nowContent article:nth-of-type(1) .nowConText .inner a:hover span::before {
+#nowContent > article:nth-of-type(1) .nowConText > .inner a:hover span::before {
   background-color: #fff;
 }
-#nowContent article:nth-of-type(3) .nowConText {
+#nowContent > article:nth-of-type(3) .nowConText {
   left: 50px;
 }
-#nowContent article:nth-of-type(3) .nowConText .inner {
+#nowContent > article:nth-of-type(3) .nowConText > .inner {
   height: 150px;
 }
-#nowContent article:nth-of-type(3) .nowConText .inner h3 {
+#nowContent > article:nth-of-type(3) .nowConText > .inner h3 {
   font: bold 32px/1.5 "Noto+Sans+KR";
   color: #fff;
 }
-#nowContent article:nth-of-type(3) .nowConText .inner a button {
+#nowContent > article:nth-of-type(3) .nowConText > .inner a button {
   background-color: orange;
 }
-#nowContent article:nth-of-type(3) .nowConText .inner a span::before {
+#nowContent > article:nth-of-type(3) .nowConText > .inner a span::before {
   background-color: #fff;
 }
-#nowContent article:nth-of-type(3) .nowConText .inner a span i {
+#nowContent > article:nth-of-type(3) .nowConText > .inner a span i {
   color: orange;
 }
-#nowContent article:nth-of-type(3) .nowConText .inner a:hover span i {
+#nowContent > article:nth-of-type(3) .nowConText > .inner a:hover span i {
   color: orange;
 }
-#nowContent article:nth-of-type(3) .nowConText .inner a:hover span::before {
+#nowContent > article:nth-of-type(3) .nowConText > .inner a:hover span::before {
   background-color: #fff;
 }
-#nowContent article:nth-of-type(5) .nowConText .inner {
+#nowContent > article:nth-of-type(5) .nowConText > .inner {
   height: 250px;
 }
-#nowContent article:nth-of-type(5) .nowConText .inner h3 {
+#nowContent > article:nth-of-type(5) .nowConText > .inner h3 {
   font: bold 32px/1.5 "Noto+Sans+KR";
   color: #fff;
   text-shadow: 5px 5px 5px #000;
 }
-#nowContent article:nth-of-type(5) .nowConText .inner a button {
+#nowContent > article:nth-of-type(5) .nowConText > .inner a button {
   background-color: yellowgreen;
 }
-#nowContent article:nth-of-type(5) .nowConText .inner a span::before {
+#nowContent > article:nth-of-type(5) .nowConText > .inner a span::before {
   background-color: orange;
 }
-#nowContent article:nth-of-type(5) .nowConText .inner a span i {
+#nowContent > article:nth-of-type(5) .nowConText > .inner a span i {
   color: yellowgreen;
 }
-#nowContent article:nth-of-type(5) .nowConText .inner a:hover span i {
+#nowContent > article:nth-of-type(5) .nowConText > .inner a:hover span i {
   color: yellowgreen;
 }
-#nowContent article:nth-of-type(5) .nowConText .inner a:hover span::before {
+#nowContent > article:nth-of-type(5) .nowConText > .inner a:hover span::before {
   background-color: orange;
 }
-#nowContent article:nth-of-type(4) .nowConText, #nowContent article:nth-of-type(6) .nowConText {
+#nowContent > article:nth-of-type(4) .nowConText, #nowContent > article:nth-of-type(6) .nowConText {
   left: 50px;
 }
-#nowContent article:nth-of-type(4) .nowConText .inner, #nowContent article:nth-of-type(6) .nowConText .inner {
+#nowContent > article:nth-of-type(4) .nowConText > .inner, #nowContent > article:nth-of-type(6) .nowConText > .inner {
   height: 150px;
 }
-#nowContent article:nth-of-type(4) .nowConText .inner h3, #nowContent article:nth-of-type(6) .nowConText .inner h3 {
+#nowContent > article:nth-of-type(4) .nowConText > .inner h3, #nowContent > article:nth-of-type(6) .nowConText > .inner h3 {
   font: bold 32px/1.5 "Noto+Sans+KR";
   color: #fff;
   text-shadow: 5px 5px 5px #000;
 }
-#nowContent article:nth-of-type(4) .nowConText .inner a button, #nowContent article:nth-of-type(6) .nowConText .inner a button {
+#nowContent > article:nth-of-type(4) .nowConText > .inner a button, #nowContent > article:nth-of-type(6) .nowConText > .inner a button {
   background-color: orange;
 }
-#nowContent article:nth-of-type(4) .nowConText .inner a span::before, #nowContent article:nth-of-type(6) .nowConText .inner a span::before {
+#nowContent > article:nth-of-type(4) .nowConText > .inner a span::before, #nowContent > article:nth-of-type(6) .nowConText > .inner a span::before {
   background-color: #fff;
 }
-#nowContent article:nth-of-type(4) .nowConText .inner a span i, #nowContent article:nth-of-type(6) .nowConText .inner a span i {
+#nowContent > article:nth-of-type(4) .nowConText > .inner a span i, #nowContent > article:nth-of-type(6) .nowConText > .inner a span i {
   color: orange;
 }
-#nowContent article:nth-of-type(4) .nowConText .inner a:hover span i, #nowContent article:nth-of-type(6) .nowConText .inner a:hover span i {
+#nowContent > article:nth-of-type(4) .nowConText > .inner a:hover span i, #nowContent > article:nth-of-type(6) .nowConText > .inner a:hover span i {
   color: orange;
 }
-#nowContent article:nth-of-type(4) .nowConText .inner a:hover span::before, #nowContent article:nth-of-type(6) .nowConText .inner a:hover span::before {
+#nowContent > article:nth-of-type(4) .nowConText > .inner a:hover span::before, #nowContent > article:nth-of-type(6) .nowConText > .inner a:hover span::before {
   background-color: #fff;
 }
-#nowContent article:nth-of-type(7) .nowConText {
+#nowContent > article:nth-of-type(7) .nowConText {
   top: 0;
   left: 50px;
 }
-#nowContent article:nth-of-type(7) .nowConText .inner {
+#nowContent > article:nth-of-type(7) .nowConText > .inner {
   height: 150px;
 }
-#nowContent article:nth-of-type(7) .nowConText .inner h3 {
+#nowContent > article:nth-of-type(7) .nowConText > .inner h3 {
   font: bold 32px/1.5 "Noto+Sans+KR";
   color: #fff;
   text-shadow: 5px 5px 5px #000;
 }
-#nowContent article:nth-of-type(7) .nowConText .inner a button {
+#nowContent > article:nth-of-type(7) .nowConText > .inner a button {
   background-color: yellowgreen;
 }
-#nowContent article:nth-of-type(7) .nowConText .inner a span::before {
+#nowContent > article:nth-of-type(7) .nowConText > .inner a span::before {
   background-color: orange;
 }
-#nowContent article:nth-of-type(7) .nowConText .inner a span i {
+#nowContent > article:nth-of-type(7) .nowConText > .inner a span i {
   color: yellowgreen;
 }
-#nowContent article:nth-of-type(7) .nowConText .inner a:hover span i {
+#nowContent > article:nth-of-type(7) .nowConText > .inner a:hover span i {
   color: yellowgreen;
 }
-#nowContent article:nth-of-type(7) .nowConText .inner a:hover span::before {
+#nowContent > article:nth-of-type(7) .nowConText > .inner a:hover span::before {
   background-color: orange;
 }
 
