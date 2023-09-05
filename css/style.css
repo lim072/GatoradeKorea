@@ -401,7 +401,7 @@ main #mainCompany img {
     flex-direction: column;
   }
   body #companyContent .inner .con1 .conBox > div {
-    width: 100%;
+    width: 90%;
     margin-bottom: 30px;
   }
   body #companyContent .inner .con1 .conBox > div p {
@@ -426,7 +426,7 @@ main #mainCompany img {
   }
   body #companyContent2 > .conBox article {
     align-items: center;
-    padding-left: 10px;
+    padding-left: 20px;
     width: 100%;
   }
   body #companyContent2 > .conBox article h3 {
@@ -450,7 +450,7 @@ main #mainCompany img {
   }
   body #companyContent3 > .conBox article {
     align-items: center;
-    padding-left: 10px;
+    padding-left: 20px;
     width: 100%;
   }
   body #companyContent3 > .conBox article h3 {
